@@ -10,8 +10,21 @@ body {
   width:fit-content;
   color:	#646060
 }
+@media (max-width: 600px){
+  .farmerimg{
+    margin-top: 100px !important;
 
-
+  }
+  .section{
+    margin-left: 40px !important  
+  }
+}
+.farmerimg{
+  margin-top: -144px;
+}
+.section{
+  margin-left: 70px
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
