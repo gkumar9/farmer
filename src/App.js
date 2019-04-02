@@ -60,7 +60,7 @@ class App extends Component {
       <div>
         <Header />
 
-        <Jumbotron style={{ minHeight: "420px" }}>
+        <Jumbotron style={{ minHeight: "300px" }}>
           <div
             data-aos="fade-right"
             data-aos-offset="200"
@@ -69,7 +69,7 @@ class App extends Component {
             data-aos-once="true"
             data-aos-easing="ease-in-out"
           >
-            <div style={{ marginLeft: "100px" }}>
+            <div className="section">
               <p
                 style={{
                   fontSize: "94px",
@@ -116,10 +116,10 @@ class App extends Component {
             fluid
             style={{ minHeight: "460px", backgroundColor: "#E7DD74" }}
           >
-            <div className="section" >
+            <div className="section">
               <Container fluid>
                 <Row>
-                  <Col xs="5" md="5">
+                  <Col style={{ marginTop: "80px" }} xs="5" md="5">
                     <p
                       style={{
                         color: "white",
@@ -153,7 +153,7 @@ class App extends Component {
                   </Col>
                   <Col xs="1" md="2 " />
                   <Col xs="6" md="5">
-                    <div className="farmerimg" >
+                    <div className="farmerimg">
                       {/* <div 
                 data-aos="fade-up"
                 data-aos-offset="200"
@@ -185,13 +185,13 @@ class App extends Component {
         >
           <Jumbotron
             fluid
-            style={{ minHeight: "420px", backgroundColor: "white" }}
+            style={{ minHeight: "490px", backgroundColor: "white" }}
           >
             <div className="section">
               <Container fluid>
                 <Row>
                   <Col xs="3" md="3">
-                    <div style={{ marginTop: "-166px" }}>
+                    <div style={{ marginTop: "-100px" }}>
                       {/* <div
                       data-aos="fade-up"
                       data-aos-offset="200"
@@ -205,7 +205,7 @@ class App extends Component {
                     </div>
                   </Col>
                   <Col xs="3" md="3">
-                    <div style={{ marginTop: "-166px" }}>
+                    <div style={{ marginTop: "-100px" }}>
                       <img width="65%" src={farm2} alt="farm pic" />
                     </div>
                     {/* </div> */}
@@ -314,7 +314,7 @@ class App extends Component {
           </Jumbotron>
         </div>
 
-        <Jumbotron style={{ minHeight: "420px", backgroundColor: "#F7E7E7" }}>
+        <Jumbotron style={{ minHeight: "300px", backgroundColor: "#F7E7E7" }}>
           <div
             data-aos="fade-right"
             data-aos-offset="200"
@@ -399,7 +399,7 @@ class App extends Component {
                   </Col>
                   <Col xs="2" md="2 " />
                   <Col xs="5" md="5">
-                    <div style={{ marginTop: "-140px" }}>
+                    <div style={{ marginTop: "-180px" }}>
                       <Row>
                         <Col xs="10" md="10">
                           <img width="97%" src={Imgturmeric} alt="farmer pic" />
@@ -407,7 +407,7 @@ class App extends Component {
                         <Col xs="2" md="2" />
                       </Row>
                     </div>
-                    <div style={{ marginTop: "40px" }}>
+                    <div style={{ marginTop: "100px" }}>
                       <Row>
                         <Col xs="4" md="4" />
                         <Col xs="8" md="8">
@@ -424,8 +424,8 @@ class App extends Component {
 
         <Jumbotron
           style={{
-            marginTop: "-100px",
-            minHeight: "420px",
+            marginTop: "-50px",
+            minHeight: "350px",
             backgroundColor: "	#EDF3E9"
           }}
         >
@@ -481,7 +481,7 @@ class App extends Component {
           data-aos-once="true"
           data-aos-easing="ease-in-out"
         >
-          <Jumbotron fluid style={{ minHeight: "400px" }}>
+          <Jumbotron fluid style={{ minHeight: "460px" }}>
             <div className="section">
               <Container fluid>
                 <Row>
@@ -517,7 +517,7 @@ class App extends Component {
                   </Col>
                   <Col xs="2" md="2 " />
                   <Col xs="5" md="5">
-                    <div style={{ marginTop: "-140px" }}>
+                    <div style={{ marginTop: "-100px" }}>
                       <Row>
                         <Col xs="4" md="4" />
                         <Col xs="8" md="8">
@@ -525,7 +525,7 @@ class App extends Component {
                         </Col>
                       </Row>
                     </div>
-                    <div style={{ marginTop: "190px" }}>
+                    <div style={{ marginTop: "300px" }}>
                       <Row>
                         <Col xs="4" md="4" />
                         <Col xs="8" md="8">
@@ -542,8 +542,8 @@ class App extends Component {
 
         <Jumbotron
           style={{
-            marginTop: "-100px",
-            minHeight: "490px",
+            marginTop: "-150px",
+            minHeight: "600px",
             backgroundColor: "	#D0EDBD"
           }}
         >
@@ -558,7 +558,7 @@ class App extends Component {
             <div className="section" style={{ marginTop: "70px" }}>
               <Container fluid>
                 <Row>
-                  <Col xs="4" md="4">
+                  <Col style={{ marginTop: "80px" }} xs="3" md="3">
                     <Map
                       mapTypeControl={false}
                       gestureHandling={"greedy"}
@@ -581,9 +581,9 @@ class App extends Component {
                       />
                     </Map>
                   </Col>
-                  <Col xs="6" md="4" />
-                  <Col xs="6" md="4">
-                    <div>
+                  <Col xs="4" md="4" />
+                  <Col style={{ marginTop: "120px" }} xs="5" md="5">
+                    <div style={{ marginLeft: "20px" }}>
                       <h3
                         style={{
                           marginLeft: "26px",
@@ -685,7 +685,7 @@ class App extends Component {
 
         <Jumbotron
           style={{
-            minHeight: "420px",
+            minHeight: "480px",
             backgroundImage: `url(${backgroundimg})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover"
@@ -699,7 +699,7 @@ class App extends Component {
             data-aos-once="true"
             data-aos-easing="ease-in-out"
           >
-            <div className="section" style={{ marginTop: "70px" }}>
+            <div className="section" style={{ marginTop: "80px" }}>
               <Container fluid>
                 <Row>
                   <Col xs="7" md="7" />
@@ -708,6 +708,7 @@ class App extends Component {
                       <div
                         style={{
                           padding: "25px",
+                          marginBottom: "40px",
                           backgroundColor: "white",
                           borderRadius: "5px"
                         }}
@@ -715,29 +716,41 @@ class App extends Component {
                         <span
                           style={{ color: "#51c7ec", fontSize: "xx-large" }}
                         >
-                         <b> Write to Santosh</b>
+                          <b> Write to Santosh</b>
                         </span>
                         <br />
-                        <small style={{ marginTop: "-40px",fontSize:'small', color: "gray" }}>
+                        <small
+                          style={{
+                            marginTop: "-40px",
+                            fontSize: "small",
+                            color: "gray"
+                          }}
+                        >
                           We will be happy to pass your thank you note or
                           feedback message to our friend, Santosh.
                         </small>
                         <div style={{ marginTop: "20px" }}>
                           <Form>
                             <Form.Group>
-                              <Form.Label style={{ fontSize:'smaller',color: "gray" }}>
+                              <Form.Label
+                                style={{ fontSize: "smaller", color: "gray" }}
+                              >
                                 Name
                               </Form.Label>
                               <Form.Control type="text" />
                             </Form.Group>
                             <Form.Group>
-                              <Form.Label style={{ fontSize:'smaller',color: "gray" }}>
+                              <Form.Label
+                                style={{ fontSize: "smaller", color: "gray" }}
+                              >
                                 Email
                               </Form.Label>
                               <Form.Control type="email" />
                             </Form.Group>
                             <Form.Group>
-                              <Form.Label style={{ fontSize:'smaller',color: "gray" }}>
+                              <Form.Label
+                                style={{ fontSize: "smaller", color: "gray" }}
+                              >
                                 Message
                               </Form.Label>
                               <Form.Control as="textarea" rows="3" />
@@ -761,7 +774,7 @@ class App extends Component {
 
         <Jumbotron
           style={{
-            minHeight: "400px",
+            minHeight: "300px",
             backgroundColor: "	#686667"
           }}
         >
@@ -773,11 +786,11 @@ class App extends Component {
             data-aos-once="true"
             data-aos-easing="ease-in-out"
           >
-            <div style={{ marginTop: "70px" }}>
+            <div>
               <Container fluid>
                 <Row>
                   <Col xs="8" md="8" />
-                  <Col xs="4" md="4">
+                  <Col style={{ marginTop: "80px" }} xs="4" md="4">
                     <Row>
                       <Col>
                         <Button variant="link">About Us</Button>

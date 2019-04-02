@@ -1,0 +1,32 @@
+.container {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  img {
+    /*  To contain the image to the confines of the div  */
+    max-width: 100%;
+  }
+  .jumbotron {
+    padding: 0;
+    /* margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: .3rem; */
+  }
+  .hero-image {
+    max-width: 100%; 
+    width: 800px;
+    margin: auto;
+  }
+  
+  .hero-image::after {
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
+    margin-top: -150px;
+    height: 150px;
+    width: 100%;
+    content: '';
+  }

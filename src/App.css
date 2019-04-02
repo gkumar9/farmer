@@ -16,3 +16,63 @@
 .list-group-item{
 border:none !important;
 }
+
+@media (max-width: 600px){
+  .farmerimg{
+    margin-top: 100px !important;
+
+  }
+  .section{
+    margin-left: 40px !important  
+  }
+}
+.farmerimg{
+  margin-top: -80px;
+}
+.section{
+  margin-left: 70px;
+  padding-top: 60px;
+  /* margin-top: 70px !important; */
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+body{
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+.jumbotron{
+  margin-bottom: 0 !important;
+}
+.btn-link {
+  font-weight: 400;
+  font-size: 25px;
+  color: #f8f9fa;
+  text-decoration: none;
+}
+.btn-link:hover {
+  color: #f8f9fa;
+  text-decoration: underline;
+}
+
+.MainContainer {
+  perspective: 1px;
+  transform-style: preserve-3d;
+
+}
+
+.ParallaxContainer {
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  z-index: -1;
+  /* height: 100vh; */
+  /* justify-content: center;
+  align-items: center; */
+  transform: translateZ(-1px) scale(2);
+  /* background-color: #fae4d8; */
+}
+
