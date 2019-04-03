@@ -24,9 +24,19 @@
   .hero-image::after {
     display: block;
     position: relative;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #313437 100%);
     margin-top: -150px;
+    background-size: cover;
     height: 150px;
     width: 100%;
     content: '';
+  }
+  .title {
+    position: absolute;
+    width: -webkit-fill-available;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
   }

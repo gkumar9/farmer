@@ -555,10 +555,10 @@ class App extends Component {
             data-aos-once="true"
             data-aos-easing="ease-in-out"
           >
-            <div className="section" style={{ marginTop: "70px" }}>
+            <div className="section" >
               <Container fluid>
                 <Row>
-                  <Col style={{ marginTop: "80px" }} xs="3" md="3">
+                  <Col  style={{ marginTop: "40px" }} xs="3" md="3">
                     <Map
                       mapTypeControl={false}
                       gestureHandling={"greedy"}

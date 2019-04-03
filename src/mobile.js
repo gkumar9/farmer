@@ -60,66 +60,41 @@ class App extends Component {
       <div>
         <Container>
           <Header />
-          <Jumbotron
-            fluid
-            className="hero-image"
-          >
-           <img  src={farmerimg} alt="farmer pic" />
-         </Jumbotron>
-          <Jumbotron>
-            {/* <div
-              data-aos="fade-right"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="600"
-              data-aos-once="true"
-              data-aos-easing="ease-in-out"
-            > */}
-              <div style={{    textAlign: '-webkit-center'}}>
-                <p
-                  style={{
-                    fontSize: "19vw",
-                    fontFamily: "-webkit-body",
-                    color: "gray"
-                  }}
-                >
-                  Know
-                </p>
-                <p
-                  style={{
-                    marginTop: "-20vw",
-                    marginLeft: "26vw",
-                    fontFamily: "-webkit-body",
-                    fontSize: "16vw",
-                    color: "lightgray"
-                  }}
-                >
-                  your
-                </p>
-                <p
-                  style={{
-                    marginTop: "-25vw",
-                    fontSize: "26vw",
-                    // marginLeft: "8vw",
-                    fontFamily: "-webkit-body",
-                    color: "#9bd29b"
-                  }}
-                >
-                  <b>farmer</b>
-                </p>
-              </div>
-            {/* </div> */}
+          <Jumbotron fluid>
+            <div className="hero-image">
+              <img fluid src={farmerimg} alt="farmer pic" />
+            </div>
+            <div className="title">
+              <h5>Know your farmer</h5>
+              <h2 style={{ color: "#53e253" }}>
+                Santosh <b>Thankur</b>
+              </h2>
+              <small style={{ color: "lightgray" }}>Rau pusa, samastipur</small>
+            </div>
           </Jumbotron>
           <div
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-delay="50"
-          data-aos-duration="600"
-          data-aos-once="true"
-          data-aos-easing="ease-in-out"
-        >
-          
-        </div>
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="600"
+            data-aos-once="true"
+            data-aos-easing="ease-in-out"
+          >
+            <Jumbotron
+              fluid
+              style={{
+                backgroundColor: "#E7DD74",
+                padding: "5vw"
+              }}
+            >
+              <p>
+                Santosh dropped out of school in Grade 8 as the sole breadearner
+                of his family. He joined Clam in 2013 and since then has saved
+                over Rs 1,24,343 in agricultural input cost with clean energy
+                and irrigation services in a span of 6 years.{" "}
+              </p>
+            </Jumbotron>
+          </div>
         </Container>
       </div>
     );
