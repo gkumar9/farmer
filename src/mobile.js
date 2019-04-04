@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-// import { Map, Marker, GoogleApiWrapper } from "google-maps-react";
-// import CO2 from "./1.png";
-// import FLOW from "./2.png";
-// import SOLARENERGY from "./3.png";
-// import Imgturmeric from "./imgturmeric.png";
-// import Imgplant from "./imgplant.png";
-// import land from "./land.png";
-// import landsoil from "./landsoil.png";
+import { Map, Marker, GoogleApiWrapper } from "google-maps-react";
+import CO2 from "./1.png";
+import FLOW from "./2.png";
+import SOLARENERGY from "./3.png";
+import Imgturmeric from "./imgturmeric.png";
+import Imgplant from "./imgplant.png";
+import land from "./land.png";
+import landsoil from "./landsoil.png";
 // import rain from "./rain.png";
 // import soil from "./soil.png";
 // import temp from "./temp.png";
@@ -24,8 +24,8 @@ import {
   Container
 } from "react-bootstrap";
 import farmerimg from "./farmerpic.jpg";
-// import farm2 from "./farm2.png";
-// import farm1 from "./farm1.png";
+import farm2 from "./farm2.png";
+import farm1 from "./farm1.png";
 import "./mobile.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -60,7 +60,7 @@ class App extends Component {
       <div>
         <Container>
           <Header />
-          <Jumbotron fluid>
+          <Jumbotron fluid="true">
             <div className="hero-image">
               <img fluid src={farmerimg} alt="farmer pic" />
             </div>
@@ -84,7 +84,7 @@ class App extends Component {
               fluid
               style={{
                 backgroundColor: "#E7DD74",
-                padding: "5vw"
+                padding: "7vw"
               }}
             >
               <p>
@@ -95,10 +95,418 @@ class App extends Component {
               </p>
             </Jumbotron>
           </div>
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="600"
+            data-aos-once="true"
+            data-aos-easing="ease-in-out"
+          >
+            <Jumbotron fluid>
+              <div>
+                <img
+                  style={{ width: "-webkit-fill-available" }}
+                  fluid="true"
+                  src={farm1}
+                  alt="farmer pic"
+                />
+              </div>
+            </Jumbotron>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="600"
+            data-aos-once="true"
+            data-aos-easing="ease-in-out"
+          >
+            <Jumbotron
+              fluid
+              style={{
+                backgroundColor: "#E7DD74",
+                padding: "7vw"
+              }}
+            >
+              <p>
+                Born on 12th Sep 1978, Santosh is the second child of his
+                parents. He hails from Rau Pusa village in the district of
+                Samastipur, Bihar. He owns 37 katha of turmeric farmland, sowing
+                the Morangia variety in the month of May. He has been in the
+                profession for over 20 years.
+              </p>
+            </Jumbotron>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="600"
+            data-aos-once="true"
+            data-aos-easing="ease-in-out"
+          >
+            <Jumbotron fluid>
+              <div>
+                <img
+                  style={{ width: "-webkit-fill-available" }}
+                  fluid="true"
+                  src={farm2}
+                  alt="farmer pic"
+                />
+              </div>
+            </Jumbotron>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="600"
+            data-aos-once="true"
+            data-aos-easing="ease-in-out"
+          >
+            <Jumbotron
+              fluid
+              style={{
+                backgroundColor: "#E7DD74",
+                padding: "7vw"
+              }}
+            >
+              <p>
+                Currently he lives with his wife, younger brother and 3
+                children, all of them attending the community schools.
+                Encouraged by the partnership with Claro Minigrid Livelihod
+                Scheme, he plans to completely switch his house and farms into
+                clean energy technologies.
+              </p>
+            </Jumbotron>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="600"
+            data-aos-once="true"
+            data-aos-easing="ease-in-out"
+          >
+            <Jumbotron
+              fluid
+              style={{
+                padding: "7vw"
+              }}
+            >
+              <div
+                style={{
+                  alignItems: "center",
+                  display: "flex",
+                  flexDirection: "column"
+                }}
+              >
+                <h3
+                  style={{
+                    marginBottom: "20px",
+                    color: "gray"
+                  }}
+                >
+                  Our Impact
+                </h3>
+                <ListGroup variant="flush">
+                  <ListGroup.Item>
+                    <Row>
+                      <Col xs="3">
+                        <img
+                          className="responsive"
+                          alt="CO2"
+                          src={CO2}
+                          style={{ width: "46px", marginLeft: "-11px" }}
+                        />
+                      </Col>
+                      <Col xs="9">
+                        <span>
+                          <b>1212121 tonnes</b>
+                        </span>
+                        <p>
+                          <small>CO2 avoided</small>
+                        </p>
+                      </Col>
+                    </Row>
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    <Row>
+                      <Col xs="3">
+                        <img
+                          className="responsive"
+                          alt="flow"
+                          src={FLOW}
+                          style={{ width: "46px", marginLeft: "-11px" }}
+                        />
+                      </Col>
+                      <Col xs="9">
+                        <span>
+                          <b>23234324 kL</b>
+                        </span>
+                        <p>
+                          <small>Water pumped</small>
+                        </p>
+                      </Col>
+                    </Row>
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    <Row>
+                      <Col xs="3">
+                        <img
+                          className="responsive"
+                          alt="energy"
+                          src={SOLARENERGY}
+                          style={{ width: "46px", marginLeft: "-11px" }}
+                        />
+                      </Col>
+                      <Col xs="9">
+                        <span>
+                          <b>1712.3 GWh</b>
+                        </span>
+                        <p>
+                          <small>Energy generated</small>
+                        </p>
+                      </Col>
+                    </Row>
+                  </ListGroup.Item>
+                </ListGroup>
+              </div>
+            </Jumbotron>
+          </div>
+          <Jumbotron fluid>
+            <div className="hero-image">
+              <img fluid src={Imgturmeric} alt="farmer pic" />
+            </div>
+            <div className="titleturmeric">
+              <h2>Get to Know turmeric</h2>
+            </div>
+          </Jumbotron>
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="600"
+            data-aos-once="true"
+            data-aos-easing="ease-in-out"
+          >
+            <Jumbotron
+              fluid
+              style={{
+                backgroundColor: "#F7E7E7",
+                padding: "7vw"
+              }}
+            >
+              <p>
+                Turmeric is one of the most versatile and widely used spices
+                known to man. It adds flavour and colour to all kinds of
+                curries, and is just as likely to be found in cakes, biscuits,
+                cereals, cheese, yoghurt, sweets and even kulS, or Indian milk
+                ice cream. It's also used as a fabric dye, food additive, health
+                remedy, cosmetic and as an application in religious ceremonies.
+              </p>
+              <p>
+                First discovered more than 2,500 years ago, its health
+                properties as a natural anti-inflammatory, antiseptic and
+                antibacterial agent have long been known in the East. It is
+                thought that turmeric can slow down the effects of Alzheimer's
+                disease and multiple sclerosis, and remove liver toxins
+              </p>
+            </Jumbotron>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="600"
+            data-aos-once="true"
+            data-aos-easing="ease-in-out"
+          >
+            <Jumbotron fluid>
+              <div>
+                <img
+                  style={{
+                    maxHeight: "fit-content",
+                    width: "-webkit-fill-available"
+                  }}
+                  fluid="true"
+                  src={Imgplant}
+                  alt="farmer pic"
+                />
+              </div>
+            </Jumbotron>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="600"
+            data-aos-once="true"
+            data-aos-easing="ease-in-out"
+          >
+            <Jumbotron
+              fluid
+              style={{
+                backgroundColor: "#F7E7E7",
+                padding: "7vw"
+              }}
+            >
+              <p>
+                And, of course, it doubles up as a natural remedy for the common
+                cold- Take a teaspoon of turmeric and add it to a quarter of a
+                cup of milk. Mix it in well and simmer over a slow heat,
+                allowing it to cool before drinking. Remaining turmeric can be
+                heated over a flame until it gives off a faint vapour - inhale
+                this if you have a stuffy nose.
+              </p>
+            </Jumbotron>
+          </div>
+          <Jumbotron fluid>
+            <div className="hero-image">
+              <img
+                fluid="true"
+                style={{ width: "-webkit-fill-available" }}
+                src={land}
+                alt="farmer pic"
+              />
+            </div>
+            <div className="titleturmeric">
+              <h2>The farmland and soil</h2>
+            </div>
+          </Jumbotron>
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="600"
+            data-aos-once="true"
+            data-aos-easing="ease-in-out"
+          >
+            <Jumbotron
+              fluid
+              style={{
+                backgroundColor: "#EDF3E9",
+                padding: "7vw"
+              }}
+            >
+              <p>
+                Santosh owns 15 plots of land in the block of Rau Pusa. The area
+                falls under middle Gangetic plain agro climatic zone. The lands
+                of this zone which are alluvial plains are sloppy towards the
+                south east direction with a very low gradient as evidenced by
+                the direction in which the rivers flow.
+              </p>
+              <p>
+                The rivers of Burhi Gandak, Baya, Kosi, Kamla, Kareh, Jhamwari
+                and Balan flow in Samastipur. As all the rivers and rivulets
+                originate in the high Himalayas, dominated by mechanical
+                weathering of rocks, the soils are mostly light to medium light
+                textured except those away from the direct influence of the
+                rivers.
+              </p>
+            </Jumbotron>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="600"
+            data-aos-once="true"
+            data-aos-easing="ease-in-out"
+          >
+            <Jumbotron fluid>
+              <div>
+                <img
+                  style={{
+                    maxHeight: "fit-content",
+                    width: "-webkit-fill-available"
+                  }}
+                  fluid="true"
+                  src={landsoil}
+                  alt="farmer pic"
+                />
+              </div>
+            </Jumbotron>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="600"
+            data-aos-once="true"
+            data-aos-easing="ease-in-out"
+          >
+            <Jumbotron
+              fluid
+              style={{
+                backgroundColor: "#EDF3E9",
+                padding: "7vw"
+              }}
+            >
+              <p>
+                The upland soils are well drained to moderately well drained.
+                The medium low lands and the low lands soils, although of good
+                to moderate permeability, have become some what poorly drained
+                due to high water table in the areas. The soils are moderately
+                rich to poor in nitrogen (especially in Gopalganj and Siwan
+                districts), moderate to very low in available phosphorus and
+                medium to high in available potash. The soils are showing
+                symptoms of deficiency of zinc and iron mostly induced by high
+                available calcium.
+              </p>
+              {/* <div >
+              <Map
+                mapTypeControl={false}
+                gestureHandling={"greedy"}
+                zoomControl={true}
+                streetViewControl={false}
+                fullscreenControl={false}
+                google={this.props.google}
+                initialCenter={{
+                  lat: 25.9845,
+                  lng: 85.6807
+                }}
+                zoom={10}
+              >
+                <Marker
+                  position={{
+                    lat: 25.9845,
+                    lng: 85.6807
+                  }}
+                  name={"Current location"}
+                />
+              </Map></div> */}
+            </Jumbotron>
+          </div>{" "}
+          <Jumbotron style={{ maxHeight: "" }}>
+            {/* <Map
+              mapTypeControl={false}
+              gestureHandling={"greedy"}
+              zoomControl={true}
+              streetViewControl={false}
+              fullscreenControl={false}
+              google={this.props.google}
+              initialCenter={{
+                lat: 25.9845,
+                lng: 85.6807
+              }}
+              zoom={10}
+            >
+              <Marker
+                position={{
+                  lat: 25.9845,
+                  lng: 85.6807
+                }}
+                name={"Current location"}
+              />
+            </Map> */}
+          </Jumbotron>
         </Container>
       </div>
     );
   }
 }
-
-export default App;
+export default GoogleApiWrapper({
+  apiKey: "AIzaSyCHi5ryWgN1FcZI-Hmqw3AdxJQmpopYJGk"
+})(App);

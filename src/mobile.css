@@ -17,7 +17,7 @@
   }
   .hero-image {
     max-width: 100%; 
-    width: 800px;
+    width: -webkit-fill-available;
     margin: auto;
   }
   
@@ -34,9 +34,19 @@
   .title {
     position: absolute;
     width: -webkit-fill-available;
-    top: 57%;
+    /* top: 57%; */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -100%);
+    color: white;
+    text-align: center;
+  }
+  
+  .titleturmeric {
+    position: absolute;
+    width: -webkit-fill-available;
+    /* top: 57%; */
+    left: 50%;
+    transform: translate(-50%, -92%);
     color: white;
     text-align: center;
   }
