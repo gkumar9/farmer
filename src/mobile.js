@@ -7,11 +7,11 @@ import Imgturmeric from "./imgturmeric.png";
 import Imgplant from "./imgplant.png";
 import land from "./land.png";
 import landsoil from "./landsoil.png";
-// import rain from "./rain.png";
-// import soil from "./soil.png";
-// import temp from "./temp.png";
-// import ph from "./ph.png";
-// import backgroundimg from "./background.png";
+import rain from "./rain.png";
+import soil from "./soil.png";
+import temp from "./temp.png";
+import ph from "./ph.png";
+import backgroundimg from "./background.png";
 import {
   Jumbotron,
   ListGroup,
@@ -30,7 +30,7 @@ import "./mobile.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
-
+const containerStyle = { position: "absolute", width: "84%", height: "46%" };
 class Header extends Component {
   render() {
     return (
@@ -103,7 +103,13 @@ class App extends Component {
             data-aos-once="true"
             data-aos-easing="ease-in-out"
           >
-            <Jumbotron fluid>
+            <Jumbotron
+              fluid
+              style={{
+                backgroundColor: "#E7DD74",
+                padding: "7vw"
+              }}
+            >
               <div>
                 <img
                   style={{ width: "-webkit-fill-available" }}
@@ -146,7 +152,13 @@ class App extends Component {
             data-aos-once="true"
             data-aos-easing="ease-in-out"
           >
-            <Jumbotron fluid>
+            <Jumbotron
+              fluid
+              style={{
+                backgroundColor: "#E7DD74",
+                padding: "7vw"
+              }}
+            >
               <div>
                 <img
                   style={{ width: "-webkit-fill-available" }}
@@ -275,7 +287,7 @@ class App extends Component {
               </div>
             </Jumbotron>
           </div>
-          <Jumbotron fluid>
+          <Jumbotron fluid="true">
             <div className="hero-image">
               <img fluid src={Imgturmeric} alt="farmer pic" />
             </div>
@@ -323,7 +335,13 @@ class App extends Component {
             data-aos-once="true"
             data-aos-easing="ease-in-out"
           >
-            <Jumbotron fluid>
+            <Jumbotron
+              fluid
+              style={{
+                backgroundColor: "#F7E7E7",
+                padding: "7vw"
+              }}
+            >
               <div>
                 <img
                   style={{
@@ -362,7 +380,7 @@ class App extends Component {
               </p>
             </Jumbotron>
           </div>
-          <Jumbotron fluid>
+          <Jumbotron fluid="true">
             <div className="hero-image">
               <img
                 fluid="true"
@@ -415,7 +433,13 @@ class App extends Component {
             data-aos-once="true"
             data-aos-easing="ease-in-out"
           >
-            <Jumbotron fluid>
+            <Jumbotron
+              fluid
+              style={{
+                backgroundColor: "#EDF3E9",
+                padding: "7vw"
+              }}
+            >
               <div>
                 <img
                   style={{
@@ -441,7 +465,8 @@ class App extends Component {
               fluid
               style={{
                 backgroundColor: "#EDF3E9",
-                padding: "7vw"
+                padding: "7vw",
+                height: "-webkit-fill-available"
               }}
             >
               <p>
@@ -455,53 +480,288 @@ class App extends Component {
                 symptoms of deficiency of zinc and iron mostly induced by high
                 available calcium.
               </p>
-              {/* <div >
-              <Map
-                mapTypeControl={false}
-                gestureHandling={"greedy"}
-                zoomControl={true}
-                streetViewControl={false}
-                fullscreenControl={false}
-                google={this.props.google}
-                initialCenter={{
-                  lat: 25.9845,
-                  lng: 85.6807
-                }}
-                zoom={10}
-              >
-                <Marker
-                  position={{
+              <div>
+                <Map
+                  containerStyle={containerStyle}
+                  mapTypeControl={false}
+                  gestureHandling={"greedy"}
+                  zoomControl={true}
+                  streetViewControl={false}
+                  fullscreenControl={false}
+                  google={this.props.google}
+                  initialCenter={{
                     lat: 25.9845,
                     lng: 85.6807
                   }}
-                  name={"Current location"}
-                />
-              </Map></div> */}
+                  zoom={10}
+                >
+                  <Marker
+                    position={{
+                      lat: 25.9845,
+                      lng: 85.6807
+                    }}
+                    name={"Current location"}
+                  />
+                </Map>
+              </div>
             </Jumbotron>
-          </div>{" "}
-          <Jumbotron style={{ maxHeight: "" }}>
-            {/* <Map
-              mapTypeControl={false}
-              gestureHandling={"greedy"}
-              zoomControl={true}
-              streetViewControl={false}
-              fullscreenControl={false}
-              google={this.props.google}
-              initialCenter={{
-                lat: 25.9845,
-                lng: 85.6807
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="600"
+            data-aos-once="true"
+            data-aos-easing="ease-in-out"
+          >
+            <Jumbotron
+              fluid
+              style={{
+                padding: "7vw"
               }}
-              zoom={10}
             >
-              <Marker
-                position={{
-                  lat: 25.9845,
-                  lng: 85.6807
+              <div
+                style={{
+                  alignItems: "center",
+                  display: "flex",
+                  flexDirection: "column"
                 }}
-                name={"Current location"}
-              />
-            </Map> */}
+              >
+                <h3
+                  style={{
+                    marginBottom: "20px",
+                    color: "gray"
+                  }}
+                >
+                  Farmland Stats
+                </h3>
+                <ListGroup variant="flush">
+                  <ListGroup.Item>
+                    <Row>
+                      <Col xs="4">
+                        <img
+                          className="responsive"
+                          alt="rain"
+                          src={rain}
+                          style={{ width: "46px", marginLeft: "-11px" }}
+                        />
+                      </Col>
+                      <Col xs="8">
+                        <span>
+                          <b>1040-1450</b>
+                        </span>
+                        <p>
+                          <small>Total rainfall (mm)</small>
+                        </p>
+                      </Col>
+                    </Row>
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    <Row>
+                      <Col xs="4">
+                        <img
+                          className="responsive"
+                          alt="soil"
+                          src={soil}
+                          style={{ width: "46px", marginLeft: "-11px" }}
+                        />
+                      </Col>
+                      <Col xs="8">
+                        <span>
+                          <b>Sandy loam</b>
+                        </span>
+                        <p>
+                          <small>Soil type</small>
+                        </p>
+                      </Col>
+                    </Row>
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    <Row>
+                      <Col xs="4">
+                        <img
+                          className="responsive"
+                          alt="temp"
+                          src={temp}
+                          style={{ width: "46px", marginLeft: "-11px" }}
+                        />
+                      </Col>
+                      <Col xs="8">
+                        <span>
+                          <b>36.6 (max)-7.7 (min)</b>
+                        </span>
+                        <p>
+                          <small>Energy generated</small>
+                        </p>
+                      </Col>
+                    </Row>
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    <Row>
+                      <Col xs="4">
+                        <img
+                          className="responsive"
+                          alt="ph"
+                          src={ph}
+                          style={{ width: "46px", marginLeft: "-11px" }}
+                        />
+                      </Col>
+                      <Col xs="8">
+                        <span>
+                          <b>6.5-8.4</b>
+                        </span>
+                        <p>
+                          <small>Soil acidity (pH)</small>
+                        </p>
+                      </Col>
+                    </Row>
+                  </ListGroup.Item>
+                </ListGroup>
+              </div>
+            </Jumbotron>
+          </div>
+          <Jumbotron fluid="true">
+            <div
+              style={{
+                padding: "7vw",
+                backgroundImage: `url(${backgroundimg})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover"
+              }}
+            >
+              <div>
+                <div
+                // style={{
+                //   padding: "25px",
+                //   marginBottom: "40px",
+                //   backgroundColor: "white",
+                //   borderRadius: "5px"
+                // }}
+                >
+                  <span style={{ color: "#51c7ec", fontSize: "xx-large" }}>
+                    <b> Write to Santosh</b>
+                  </span>
+                  <br />
+                  <small
+                    style={{
+                      marginTop: "-40px",
+                      fontSize: "small",
+                      color: "gray"
+                    }}
+                  >
+                    We will be happy to pass your thank you note or feedback
+                    message to our friend, Santosh.
+                  </small>
+                  <div style={{ marginTop: "20px" }}>
+                    <Form>
+                      <Form.Group>
+                        <Form.Label
+                          style={{ fontSize: "smaller", color: "gray" }}
+                        >
+                          Name
+                        </Form.Label>
+                        <Form.Control type="text" />
+                      </Form.Group>
+                      <Form.Group>
+                        <Form.Label
+                          style={{ fontSize: "smaller", color: "gray" }}
+                        >
+                          Email
+                        </Form.Label>
+                        <Form.Control type="email" />
+                      </Form.Group>
+                      <Form.Group>
+                        <Form.Label
+                          style={{ fontSize: "smaller", color: "gray" }}
+                        >
+                          Message
+                        </Form.Label>
+                        <Form.Control as="textarea" rows="3" />
+                      </Form.Group>
+                      <Form.Group as={Row}>
+                        <Col xs={{ span: 4, offset: 8 }}>
+                          <Button type="submit">Submit</Button>
+                        </Col>
+                      </Form.Group>
+                    </Form>
+                  </div>
+                </div>
+              </div>
+            </div>
           </Jumbotron>
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="600"
+            data-aos-once="true"
+            data-aos-easing="ease-in-out"
+          >
+            <Jumbotron
+              fluid
+              style={{ backgroundColor: "#686667", padding: "7vw" }}
+            >
+              <ListGroup variant="flush" style={{ background: "transparent" }}>
+                <ListGroup.Item
+                  style={{
+                    background: "transparent",
+                    padding: "0.5rem 0.25rem"
+                  }}
+                >
+                  <Button variant="link">About Us</Button>
+                </ListGroup.Item>
+                <ListGroup.Item
+                  style={{
+                    background: "transparent",
+                    padding: "0.5rem 0.25rem"
+                  }}
+                >
+                  <Button variant="link">Terms of service</Button>
+                </ListGroup.Item>
+                <ListGroup.Item
+                  style={{
+                    background: "transparent",
+                    padding: "0.5rem 0.25rem"
+                  }}
+                >
+                  <Button variant="link">Careers</Button>
+                </ListGroup.Item>
+                <ListGroup.Item
+                  style={{
+                    background: "transparent",
+                    padding: "0.5rem 0.25rem"
+                  }}
+                >
+                  <Button variant="link">Privacy policy</Button>
+                </ListGroup.Item>
+                <ListGroup.Item
+                  style={{
+                    background: "transparent",
+                    padding: "0.5rem 0.25rem"
+                  }}
+                >
+                  <Button variant="link">Blog</Button>
+                </ListGroup.Item>
+              </ListGroup>
+
+              <Row style={{ marginTop: "5vw" }}>
+                <Col>
+                  <Row>
+                    <Col xs="4">
+                      <span style={{ color: "white", fontSize: "larger" }}>
+                        Claro <b>Agro</b>
+                      </span>
+                    </Col>
+                    <Col xs="8" style={{ color: "white", fontSize: "medium" }}>
+                      <span>F213/A, Old MB Road, Lado Sarai,</span>
+                      <br />
+                      <span>New Delhi 110030</span>
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+            </Jumbotron>
+          </div>
         </Container>
       </div>
     );
