@@ -55,6 +55,13 @@ class Header extends Component {
 }
 
 class App extends Component {
+  componentDidMount() {
+   
+    
+    if (window.screen.width >= 480) {
+      this.props.history.push('/');
+    }
+  }
   render() {
     return (
       <div>

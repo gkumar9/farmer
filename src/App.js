@@ -55,6 +55,13 @@ class Header extends Component {
 }
 
 class App extends Component {
+  componentDidMount() {
+    // mobile 
+    if (window.screen.width <= 480) {
+      this.props.history.push('/mobile');
+    }
+    
+  }
   render() {
     return (
       <div>
@@ -119,7 +126,7 @@ class App extends Component {
             <div className="section">
               <Container fluid>
                 <Row>
-                  <Col style={{ marginTop: "80px" }} xs="5" md="5">
+                  <Col style={{ marginTop: "40px" }} xs="5" md="5">
                     <p
                       style={{
                         color: "white",
@@ -191,7 +198,7 @@ class App extends Component {
               <Container fluid>
                 <Row>
                   <Col xs="3" md="3">
-                    <div style={{ marginTop: "-100px" }}>
+                    <div style={{ marginTop: "-140px" }}>
                       {/* <div
                       data-aos="fade-up"
                       data-aos-offset="200"
@@ -205,7 +212,7 @@ class App extends Component {
                     </div>
                   </Col>
                   <Col xs="3" md="3">
-                    <div style={{ marginTop: "-100px" }}>
+                    <div style={{ marginTop: "-140px" }}>
                       <img width="65%" src={farm2} alt="farm pic" />
                     </div>
                     {/* </div> */}
