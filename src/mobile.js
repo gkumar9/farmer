@@ -299,7 +299,7 @@ class App extends Component {
               <img fluid src={Imgturmeric} alt="farmer pic" />
             </div>
             <div className="titleturmeric">
-              <h2>Get to Know turmeric</h2>
+              <h2>Get to know turmeric</h2>
             </div>
           </Jumbotron>
           <div
@@ -473,7 +473,7 @@ class App extends Component {
               style={{
                 backgroundColor: "#EDF3E9",
                 padding: "7vw",
-                height: "-webkit-fill-available"
+                height: "232vw"
               }}
             >
               <p>
@@ -487,7 +487,7 @@ class App extends Component {
                 symptoms of deficiency of zinc and iron mostly induced by high
                 available calcium.
               </p>
-              <div>
+              <div style={{marginTop:'10vw'}}>
                 <Map
                   containerStyle={containerStyle}
                   mapTypeControl={false}
