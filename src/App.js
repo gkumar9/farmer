@@ -56,11 +56,10 @@ class Header extends Component {
 
 class App extends Component {
   componentDidMount() {
-    // mobile 
+    // mobile
     if (window.screen.width <= 480) {
-      this.props.history.push('/mobile');
+      this.props.history.push("/mobile");
     }
-    
   }
   render() {
     return (
@@ -488,7 +487,7 @@ class App extends Component {
           data-aos-once="true"
           data-aos-easing="ease-in-out"
         >
-          <Jumbotron fluid="true" >
+          <Jumbotron fluid="true">
             <div className="section">
               <Container fluid>
                 <Row>
@@ -547,7 +546,8 @@ class App extends Component {
           </Jumbotron>
         </div>
 
-        <Jumbotron fluid
+        <Jumbotron
+          fluid
           style={{
             marginTop: "-150px",
             // minHeight: "600px",
@@ -562,10 +562,10 @@ class App extends Component {
             data-aos-once="true"
             data-aos-easing="ease-in-out"
           >
-            <div className="section" >
+            <div className="section">
               <Container fluid>
                 <Row>
-                  <Col  style={{ marginTop: "40px" }} xs="3" md="3">
+                  <Col style={{ marginTop: "40px" }} xs="3" md="3">
                     <Map
                       containerStyle={containerStyle}
                       mapTypeControl={false}

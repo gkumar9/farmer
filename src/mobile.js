@@ -56,10 +56,8 @@ class Header extends Component {
 
 class App extends Component {
   componentDidMount() {
-   
-    
     if (window.screen.width >= 480) {
-      this.props.history.push('/');
+      this.props.history.push("/");
     }
   }
   render() {
@@ -71,51 +69,64 @@ class App extends Component {
             <div className="hero-image">
               <img fluid src={farmerimg} alt="farmer pic" />
             </div>
-            <div className="title">
-              <h5>Know your farmer</h5>
-              <h2 style={{ color: "#53e253" }}>
-                Santosh <b>Thankur</b>
-              </h2>
-              <small style={{ color: "lightgray" }}>Rau pusa, samastipur</small>
+            <div
+              data-aos="fade-down"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="600"
+              data-aos-once="true"
+              data-aos-easing="ease-in-out"
+            >
+              <div className="title">
+                <h5>Know your farmer</h5>
+                <h2 style={{ color: "#53e253" }}>
+                  Santosh <b>Thankur</b>
+                </h2>
+                <small style={{ color: "lightgray" }}>
+                  Rau pusa, samastipur
+                </small>
+              </div>
             </div>
           </Jumbotron>
-          <div
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="600"
-            data-aos-once="true"
-            data-aos-easing="ease-in-out"
+
+          <Jumbotron
+            fluid
+            style={{
+              backgroundColor: "#E7DD74",
+              padding: "7vw"
+            }}
           >
-            <Jumbotron
-              fluid
-              style={{
-                backgroundColor: "#E7DD74",
-                padding: "7vw"
-              }}
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="600"
+              data-aos-once="true"
+              data-aos-easing="ease-in-out"
             >
               <p>
                 Santosh dropped out of school in Grade 8 as the sole breadearner
                 of his family. He joined Clam in 2013 and since then has saved
                 over Rs 1,24,343 in agricultural input cost with clean energy
                 and irrigation services in a span of 6 years.{" "}
-              </p>
-            </Jumbotron>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="600"
-            data-aos-once="true"
-            data-aos-easing="ease-in-out"
+              </p>{" "}
+            </div>
+          </Jumbotron>
+
+          <Jumbotron
+            fluid
+            style={{
+              backgroundColor: "#E7DD74",
+              padding: "7vw"
+            }}
           >
-            <Jumbotron
-              fluid
-              style={{
-                backgroundColor: "#E7DD74",
-                padding: "7vw"
-              }}
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="600"
+              data-aos-once="true"
+              data-aos-easing="ease-in-out"
             >
               <div>
                 <img
@@ -125,22 +136,23 @@ class App extends Component {
                   alt="farmer pic"
                 />
               </div>
-            </Jumbotron>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="600"
-            data-aos-once="true"
-            data-aos-easing="ease-in-out"
+            </div>
+          </Jumbotron>
+
+          <Jumbotron
+            fluid
+            style={{
+              backgroundColor: "#E7DD74",
+              padding: "7vw"
+            }}
           >
-            <Jumbotron
-              fluid
-              style={{
-                backgroundColor: "#E7DD74",
-                padding: "7vw"
-              }}
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="600"
+              data-aos-once="true"
+              data-aos-easing="ease-in-out"
             >
               <p>
                 Born on 12th Sep 1978, Santosh is the second child of his
@@ -149,22 +161,23 @@ class App extends Component {
                 the Morangia variety in the month of May. He has been in the
                 profession for over 20 years.
               </p>
-            </Jumbotron>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="600"
-            data-aos-once="true"
-            data-aos-easing="ease-in-out"
+            </div>
+          </Jumbotron>
+
+          <Jumbotron
+            fluid
+            style={{
+              backgroundColor: "#E7DD74",
+              padding: "7vw"
+            }}
           >
-            <Jumbotron
-              fluid
-              style={{
-                backgroundColor: "#E7DD74",
-                padding: "7vw"
-              }}
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="600"
+              data-aos-once="true"
+              data-aos-easing="ease-in-out"
             >
               <div>
                 <img
@@ -174,22 +187,23 @@ class App extends Component {
                   alt="farmer pic"
                 />
               </div>
-            </Jumbotron>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="600"
-            data-aos-once="true"
-            data-aos-easing="ease-in-out"
+            </div>
+          </Jumbotron>
+
+          <Jumbotron
+            fluid
+            style={{
+              backgroundColor: "#E7DD74",
+              padding: "7vw"
+            }}
           >
-            <Jumbotron
-              fluid
-              style={{
-                backgroundColor: "#E7DD74",
-                padding: "7vw"
-              }}
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="600"
+              data-aos-once="true"
+              data-aos-easing="ease-in-out"
             >
               <p>
                 Currently he lives with his wife, younger brother and 3
@@ -198,21 +212,22 @@ class App extends Component {
                 Scheme, he plans to completely switch his house and farms into
                 clean energy technologies.
               </p>
-            </Jumbotron>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="600"
-            data-aos-once="true"
-            data-aos-easing="ease-in-out"
+            </div>
+          </Jumbotron>
+
+          <Jumbotron
+            fluid
+            style={{
+              padding: "7vw"
+            }}
           >
-            <Jumbotron
-              fluid
-              style={{
-                padding: "7vw"
-              }}
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="600"
+              data-aos-once="true"
+              data-aos-easing="ease-in-out"
             >
               <div
                 style={{
@@ -292,30 +307,41 @@ class App extends Component {
                   </ListGroup.Item>
                 </ListGroup>
               </div>
-            </Jumbotron>
-          </div>
+            </div>
+          </Jumbotron>
+
           <Jumbotron fluid="true">
             <div className="hero-image">
               <img fluid src={Imgturmeric} alt="farmer pic" />
             </div>
-            <div className="titleturmeric">
-              <h2>Get to know turmeric</h2>
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="600"
+              data-aos-once="true"
+              data-aos-easing="ease-in-out"
+            >
+              <div className="titleturmeric">
+                <h2>Get to know turmeric</h2>
+              </div>
             </div>
           </Jumbotron>
-          <div
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="600"
-            data-aos-once="true"
-            data-aos-easing="ease-in-out"
+
+          <Jumbotron
+            fluid
+            style={{
+              backgroundColor: "#F7E7E7",
+              padding: "7vw"
+            }}
           >
-            <Jumbotron
-              fluid
-              style={{
-                backgroundColor: "#F7E7E7",
-                padding: "7vw"
-              }}
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="600"
+              data-aos-once="true"
+              data-aos-easing="ease-in-out"
             >
               <p>
                 Turmeric is one of the most versatile and widely used spices
@@ -332,22 +358,23 @@ class App extends Component {
                 thought that turmeric can slow down the effects of Alzheimer's
                 disease and multiple sclerosis, and remove liver toxins
               </p>
-            </Jumbotron>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="600"
-            data-aos-once="true"
-            data-aos-easing="ease-in-out"
+            </div>
+          </Jumbotron>
+
+          <Jumbotron
+            fluid
+            style={{
+              backgroundColor: "#F7E7E7",
+              padding: "7vw"
+            }}
           >
-            <Jumbotron
-              fluid
-              style={{
-                backgroundColor: "#F7E7E7",
-                padding: "7vw"
-              }}
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="600"
+              data-aos-once="true"
+              data-aos-easing="ease-in-out"
             >
               <div>
                 <img
@@ -360,22 +387,23 @@ class App extends Component {
                   alt="farmer pic"
                 />
               </div>
-            </Jumbotron>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="600"
-            data-aos-once="true"
-            data-aos-easing="ease-in-out"
+            </div>
+          </Jumbotron>
+
+          <Jumbotron
+            fluid
+            style={{
+              backgroundColor: "#F7E7E7",
+              padding: "7vw"
+            }}
           >
-            <Jumbotron
-              fluid
-              style={{
-                backgroundColor: "#F7E7E7",
-                padding: "7vw"
-              }}
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="600"
+              data-aos-once="true"
+              data-aos-easing="ease-in-out"
             >
               <p>
                 And, of course, it doubles up as a natural remedy for the common
@@ -385,8 +413,9 @@ class App extends Component {
                 heated over a flame until it gives off a faint vapour - inhale
                 this if you have a stuffy nose.
               </p>
-            </Jumbotron>
-          </div>
+            </div>
+          </Jumbotron>
+
           <Jumbotron fluid="true">
             <div className="hero-image">
               <img
@@ -396,24 +425,34 @@ class App extends Component {
                 alt="farmer pic"
               />
             </div>
-            <div className="titleturmeric">
-              <h2>The farmland and soil</h2>
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="600"
+              data-aos-once="true"
+              data-aos-easing="ease-in-out"
+            >
+              <div className="titleturmeric">
+                <h2>The farmland and soil</h2>
+              </div>
             </div>
           </Jumbotron>
-          <div
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="600"
-            data-aos-once="true"
-            data-aos-easing="ease-in-out"
+
+          <Jumbotron
+            fluid
+            style={{
+              backgroundColor: "#EDF3E9",
+              padding: "7vw"
+            }}
           >
-            <Jumbotron
-              fluid
-              style={{
-                backgroundColor: "#EDF3E9",
-                padding: "7vw"
-              }}
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="600"
+              data-aos-once="true"
+              data-aos-easing="ease-in-out"
             >
               <p>
                 Santosh owns 15 plots of land in the block of Rau Pusa. The area
@@ -430,22 +469,23 @@ class App extends Component {
                 textured except those away from the direct influence of the
                 rivers.
               </p>
-            </Jumbotron>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="600"
-            data-aos-once="true"
-            data-aos-easing="ease-in-out"
+            </div>
+          </Jumbotron>
+
+          <Jumbotron
+            fluid
+            style={{
+              backgroundColor: "#EDF3E9",
+              padding: "7vw"
+            }}
           >
-            <Jumbotron
-              fluid
-              style={{
-                backgroundColor: "#EDF3E9",
-                padding: "7vw"
-              }}
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="600"
+              data-aos-once="true"
+              data-aos-easing="ease-in-out"
             >
               <div>
                 <img
@@ -458,23 +498,24 @@ class App extends Component {
                   alt="farmer pic"
                 />
               </div>
-            </Jumbotron>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="600"
-            data-aos-once="true"
-            data-aos-easing="ease-in-out"
+            </div>
+          </Jumbotron>
+
+          <Jumbotron
+            fluid
+            style={{
+              backgroundColor: "#EDF3E9",
+              padding: "7vw",
+              height: "232vw"
+            }}
           >
-            <Jumbotron
-              fluid
-              style={{
-                backgroundColor: "#EDF3E9",
-                padding: "7vw",
-                height: "232vw"
-              }}
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="600"
+              data-aos-once="true"
+              data-aos-easing="ease-in-out"
             >
               <p>
                 The upland soils are well drained to moderately well drained.
@@ -487,7 +528,7 @@ class App extends Component {
                 symptoms of deficiency of zinc and iron mostly induced by high
                 available calcium.
               </p>
-              <div style={{marginTop:'10vw'}}>
+              <div style={{ marginTop: "10vw" }}>
                 <Map
                   containerStyle={containerStyle}
                   mapTypeControl={false}
@@ -511,21 +552,22 @@ class App extends Component {
                   />
                 </Map>
               </div>
-            </Jumbotron>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="600"
-            data-aos-once="true"
-            data-aos-easing="ease-in-out"
+            </div>
+          </Jumbotron>
+
+          <Jumbotron
+            fluid
+            style={{
+              padding: "7vw"
+            }}
           >
-            <Jumbotron
-              fluid
-              style={{
-                padding: "7vw"
-              }}
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="600"
+              data-aos-once="true"
+              data-aos-easing="ease-in-out"
             >
               <div
                 style={{
@@ -625,8 +667,9 @@ class App extends Component {
                   </ListGroup.Item>
                 </ListGroup>
               </div>
-            </Jumbotron>
-          </div>
+            </div>
+          </Jumbotron>
+
           <Jumbotron fluid="true">
             <div
               style={{
@@ -636,7 +679,14 @@ class App extends Component {
                 backgroundSize: "cover"
               }}
             >
-              <div>
+              <div
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="600"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
+              >
                 <div
                 // style={{
                 //   padding: "25px",
@@ -696,17 +746,18 @@ class App extends Component {
               </div>
             </div>
           </Jumbotron>
-          <div
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="600"
-            data-aos-once="true"
-            data-aos-easing="ease-in-out"
+
+          <Jumbotron
+            fluid
+            style={{ backgroundColor: "#686667", padding: "7vw" }}
           >
-            <Jumbotron
-              fluid
-              style={{ backgroundColor: "#686667", padding: "7vw" }}
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="600"
+              data-aos-once="true"
+              data-aos-easing="ease-in-out"
             >
               <ListGroup variant="flush" style={{ background: "transparent" }}>
                 <ListGroup.Item
@@ -767,8 +818,8 @@ class App extends Component {
                   </Row>
                 </Col>
               </Row>
-            </Jumbotron>
-          </div>
+            </div>
+          </Jumbotron>
         </Container>
       </div>
     );
