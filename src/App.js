@@ -567,6 +567,9 @@ class App extends Component {
                 <Row>
                   <Col style={{ marginTop: "40px" }} xs="3" md="3">
                     <Map
+                      scrollwheel={
+                        false
+                      }
                       containerStyle={containerStyle}
                       mapTypeControl={false}
                       gestureHandling={"greedy"}

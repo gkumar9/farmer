@@ -530,6 +530,9 @@ class App extends Component {
               </p>
               <div style={{ marginTop: "10vw" }}>
                 <Map
+                scrollwheel={
+                        false
+                      }
                   containerStyle={containerStyle}
                   mapTypeControl={false}
                   gestureHandling={"greedy"}
