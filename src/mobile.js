@@ -67,7 +67,7 @@ class App extends Component {
           <Header />
           <Jumbotron fluid="true">
             <div className="hero-image">
-              <img fluid src={farmerimg} alt="farmer pic" />
+              <img fluid="true" src={farmerimg} alt="farmer pic" />
             </div>
             <div
               data-aos="fade-down"

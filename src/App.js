@@ -123,7 +123,7 @@ class App extends Component {
             style={{ minHeight: "460px", backgroundColor: "#E7DD74" }}
           >
             <div className="section">
-              <Container fluid>
+             
                 <Row>
                   <Col style={{ marginTop: "40px" }} xs="5" md="5">
                     <p
@@ -177,7 +177,7 @@ class App extends Component {
                     </div>
                   </Col>
                 </Row>
-              </Container>
+             
             </div>
           </Jumbotron>
         </div>
@@ -194,7 +194,7 @@ class App extends Component {
             style={{ minHeight: "500px", backgroundColor: "white" }}
           >
             <div className="section">
-              <Container fluid>
+             
                 <Row>
                   <Col xs="3" md="3">
                     <div style={{ marginTop: "-140px" }}>
@@ -315,12 +315,12 @@ class App extends Component {
                     </div>
                   </Col>
                 </Row>
-              </Container>
+             
             </div>
           </Jumbotron>
         </div>
 
-        <Jumbotron style={{ minHeight: "400px", backgroundColor: "#F7E7E7" }}>
+        <Jumbotron style={{ minHeight: "350px", backgroundColor: "#F7E7E7" }}>
           <div
             data-aos="fade-right"
             data-aos-offset="200"
@@ -372,9 +372,8 @@ class App extends Component {
           data-aos-once="true"
           data-aos-easing="ease-in-out"
         >
-          <Jumbotron fluid style={{ minHeight: "370px" }}>
+          <Jumbotron fluid  style={{minHeight: '670px'}}>
             <div className="section">
-              <Container fluid>
                 <Row>
                   <Col xs="5" md="5">
                     <p>
@@ -405,7 +404,7 @@ class App extends Component {
                   </Col>
                   <Col xs="2" md="2 " />
                   <Col xs="5" md="5">
-                    <div style={{ marginTop: "-150px" }}>
+                    <div style={{ marginTop: "-120px" }}>
                       <Row>
                         <Col xs="10" md="10">
                           <img width="97%" src={Imgturmeric} alt="farmer pic" />
@@ -413,7 +412,7 @@ class App extends Component {
                         <Col xs="2" md="2" />
                       </Row>
                     </div>
-                    <div style={{ marginTop: "40px" }}>
+                    <div style={{ marginTop: "5vw" }}>
                       <Row>
                         <Col xs="4" md="4" />
                         <Col xs="8" md="8">
@@ -423,7 +422,6 @@ class App extends Component {
                     </div>
                   </Col>
                 </Row>
-              </Container>
             </div>
           </Jumbotron>
         </div>
@@ -431,7 +429,7 @@ class App extends Component {
         <Jumbotron
           style={{
             marginTop: "-50px",
-            minHeight: "370px",
+            minHeight: "350px",
             backgroundColor: "	#EDF3E9"
           }}
         >
@@ -487,9 +485,9 @@ class App extends Component {
           data-aos-once="true"
           data-aos-easing="ease-in-out"
         >
-          <Jumbotron fluid="true">
+          <Jumbotron fluid="true" style={{    'minHeight': '690px'}}>
             <div className="section">
-              <Container fluid>
+             
                 <Row>
                   <Col xs="5" md="5">
                     <p>
@@ -523,7 +521,7 @@ class App extends Component {
                   </Col>
                   <Col xs="2" md="2 " />
                   <Col xs="5" md="5">
-                    <div style={{ marginTop: "-150px" }}>
+                    <div style={{ marginTop: "-24%" }}>
                       <Row>
                         <Col xs="3" md="3" />
                         <Col xs="9" md="9">
@@ -531,7 +529,7 @@ class App extends Component {
                         </Col>
                       </Row>
                     </div>
-                    <div style={{ marginTop: "300px" }}>
+                    <div style={{ marginTop: "33%" }}>
                       <Row>
                         <Col xs="3" md="3" />
                         <Col xs="9" md="9">
@@ -541,7 +539,7 @@ class App extends Component {
                     </div>
                   </Col>
                 </Row>
-              </Container>
+             
             </div>
           </Jumbotron>
         </div>
@@ -549,7 +547,7 @@ class App extends Component {
         <Jumbotron
           fluid
           style={{
-            marginTop: "-150px",
+            marginTop: "-3%",
             // minHeight: "600px",
             backgroundColor: "	#D0EDBD"
           }}
@@ -563,7 +561,6 @@ class App extends Component {
             data-aos-easing="ease-in-out"
           >
             <div className="section">
-              <Container fluid>
                 <Row>
                   <Col style={{ marginTop: "40px" }} xs="3" md="3">
                     <Map
@@ -593,7 +590,7 @@ class App extends Component {
                     </Map>
                   </Col>
                   <Col xs="5" md="5" />
-                  <Col style={{ marginTop: "120px" }} xs="4" md="4">
+                  <Col style={{ marginTop: "40px" }} xs="4" md="4">
                     <div style={{ marginLeft: "20px" }}>
                       <h3
                         style={{
@@ -689,7 +686,6 @@ class App extends Component {
                     </div>
                   </Col>
                 </Row>
-              </Container>
             </div>
           </div>
         </Jumbotron>
@@ -711,7 +707,7 @@ class App extends Component {
             data-aos-easing="ease-in-out"
           >
             <div className="section" style={{ marginTop: "80px" }}>
-              <Container fluid>
+             
                 <Row>
                   <Col xs="7" md="7" />
                   <Col xs="3" md="3">
@@ -767,7 +763,7 @@ class App extends Component {
                               <Form.Control as="textarea" rows="3" />
                             </Form.Group>
                             <Form.Group as={Row}>
-                              <Col xs={{ span: 4, offset: 8 }}>
+                              <Col xs={{ span: 3, offset: 7 }}>
                                 <Button type="submit">Submit</Button>
                               </Col>
                             </Form.Group>
@@ -778,7 +774,7 @@ class App extends Component {
                   </Col>
                   <Col xs="2" md="2" />
                 </Row>
-              </Container>
+             
             </div>
           </div>
         </Jumbotron>
@@ -797,8 +793,8 @@ class App extends Component {
             data-aos-once="true"
             data-aos-easing="ease-in-out"
           >
-            <div>
-              <Container fluid>
+            <div style={{padding:'20px'}}>
+             
                 <Row>
                   <Col xs="8" md="8" />
                   <Col style={{ marginTop: "80px" }} xs="4" md="4">
@@ -847,7 +843,7 @@ class App extends Component {
 
                   <Col xs="4" md="4" />
                 </Row>
-              </Container>
+             
             </div>
           </div>
         </Jumbotron>
