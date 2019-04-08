@@ -21,13 +21,14 @@ import {
   Nav,
   Row,
   Col,
-  Container
+  // Container
 } from "react-bootstrap";
 import farmerimg from "./farmerpic.jpg";
 import farm2 from "./farm2.png";
 import farm1 from "./farm1.png";
 import "./App.css";
 import AOS from "aos";
+import simpleParallax from 'simple-parallax-js';
 import "aos/dist/aos.css";
 AOS.init();
 const containerStyle = { position: "absolute", height: "90%" };
@@ -56,7 +57,11 @@ class Header extends Component {
 
 class App extends Component {
   componentDidMount() {
-    // mobile
+    var image = document.getElementsByClassName('thumbnail');
+    new simpleParallax(image, {
+      delay: .6,
+	    transition: 'cubic-bezier(0,0,0,1)'
+    })
     if (window.screen.width <= 480) {
       this.props.history.push("/mobile");
     }
@@ -167,7 +172,7 @@ class App extends Component {
                 data-aos-duration="1000"
                 data-aos-once="true"
                 data-aos-easing="ease-in-out"> */}
-                      <img width="70%" src={farmerimg} alt="farmer pic" />
+                      <img  className="thumbnail" width="70%" src={farmerimg} alt="farmer pic" />
                       {/* <ReactCSSTransitionGroup
                   transitionName="example"
                   transitionAppear={true}
@@ -206,13 +211,13 @@ class App extends Component {
                       data-aos-once="true"
                       data-aos-easing="ease-in-out"
                     > */}
-                      <img width="65%" src={farm1} alt="turmic pic" />
+                      <img className="thumbnail" width="65%" src={farm1} alt="turmic pic" />
                       {/* </div> */}
                     </div>
                   </Col>
                   <Col xs="3" md="3">
                     <div style={{ marginTop: "-140px" }}>
-                      <img width="65%" src={farm2} alt="farm pic" />
+                      <img className="thumbnail" width="65%" src={farm2} alt="farm pic" />
                     </div>
                     {/* </div> */}
                   </Col>
@@ -407,7 +412,7 @@ class App extends Component {
                     <div style={{ marginTop: "-120px" }}>
                       <Row>
                         <Col xs="10" md="10">
-                          <img width="97%" src={Imgturmeric} alt="farmer pic" />
+                          <img className="thumbnail" width="97%" src={Imgturmeric} alt="farmer pic" />
                         </Col>
                         <Col xs="2" md="2" />
                       </Row>
@@ -416,7 +421,7 @@ class App extends Component {
                       <Row>
                         <Col xs="4" md="4" />
                         <Col xs="8" md="8">
-                          <img width="70%" src={Imgplant} alt="farmer pic" />
+                          <img className="thumbnail" width="70%" src={Imgplant} alt="farmer pic" />
                         </Col>
                       </Row>
                     </div>
@@ -525,7 +530,7 @@ class App extends Component {
                       <Row>
                         <Col xs="3" md="3" />
                         <Col xs="9" md="9">
-                          <img width="70%" src={land} alt="farmer pic" />
+                          <img className="thumbnail" width="70%" src={land} alt="farmer pic" />
                         </Col>
                       </Row>
                     </div>
@@ -533,7 +538,7 @@ class App extends Component {
                       <Row>
                         <Col xs="3" md="3" />
                         <Col xs="9" md="9">
-                          <img width="70%" src={landsoil} alt="farmer pic" />
+                          <img className="thumbnail" width="70%" src={landsoil} alt="farmer pic" />
                         </Col>
                       </Row>
                     </div>

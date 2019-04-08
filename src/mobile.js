@@ -28,6 +28,8 @@ import farm2 from "./farm2.png";
 import farm1 from "./farm1.png";
 import "./mobile.css";
 import AOS from "aos";
+import simpleParallax from 'simple-parallax-js';
+
 import "aos/dist/aos.css";
 AOS.init();
 const containerStyle = { position: "absolute", width: "84%", height: "46%" };
@@ -56,18 +58,24 @@ class Header extends Component {
 
 class App extends Component {
   componentDidMount() {
+    var image = document.getElementsByClassName('thumbnail');
+    new simpleParallax(image, {
+      delay: .6,
+	    transition: 'cubic-bezier(0,0,0,1)'
+    })
     if (window.screen.width >= 480) {
       this.props.history.push("/");
     }
   }
   render() {
+    
     return (
       <div>
         <Container>
           <Header />
           <Jumbotron fluid="true">
             <div className="hero-image">
-              <img fluid="true" src={farmerimg} alt="farmer pic" />
+              <img fluid="true" className="thumbnail" src={farmerimg} alt="farmer pic" />
             </div>
             <div
               data-aos="fade-down"
@@ -129,7 +137,7 @@ class App extends Component {
               data-aos-easing="ease-in-out"
             >
               <div>
-                <img
+                <img className="thumbnail"
                   style={{ width: "-webkit-fill-available" }}
                   fluid="true"
                   src={farm1}
@@ -180,7 +188,7 @@ class App extends Component {
               data-aos-easing="ease-in-out"
             >
               <div>
-                <img
+                <img className="thumbnail"
                   style={{ width: "-webkit-fill-available" }}
                   fluid="true"
                   src={farm2}
@@ -312,7 +320,7 @@ class App extends Component {
 
           <Jumbotron fluid="true">
             <div className="hero-image">
-              <img fluid src={Imgturmeric} alt="farmer pic" />
+              <img className="thumbnail" fluid="true" src={Imgturmeric} alt="farmer pic" />
             </div>
             <div
               data-aos="fade-up"
@@ -377,7 +385,7 @@ class App extends Component {
               data-aos-easing="ease-in-out"
             >
               <div>
-                <img
+                <img className="thumbnail"
                   style={{
                     maxHeight: "fit-content",
                     width: "-webkit-fill-available"
@@ -418,7 +426,7 @@ class App extends Component {
 
           <Jumbotron fluid="true">
             <div className="hero-image">
-              <img
+              <img className="thumbnail"
                 fluid="true"
                 style={{ width: "-webkit-fill-available" }}
                 src={land}
@@ -488,7 +496,7 @@ class App extends Component {
               data-aos-easing="ease-in-out"
             >
               <div>
-                <img
+                <img className="thumbnail"
                   style={{
                     maxHeight: "fit-content",
                     width: "-webkit-fill-available"
@@ -591,7 +599,7 @@ class App extends Component {
                   <ListGroup.Item>
                     <Row>
                       <Col xs="4">
-                        <img
+                        <img 
                           className="responsive"
                           alt="rain"
                           src={rain}
@@ -611,7 +619,7 @@ class App extends Component {
                   <ListGroup.Item>
                     <Row>
                       <Col xs="4">
-                        <img
+                        <img 
                           className="responsive"
                           alt="soil"
                           src={soil}
@@ -631,7 +639,7 @@ class App extends Component {
                   <ListGroup.Item>
                     <Row>
                       <Col xs="4">
-                        <img
+                        <img 
                           className="responsive"
                           alt="temp"
                           src={temp}
@@ -651,7 +659,7 @@ class App extends Component {
                   <ListGroup.Item>
                     <Row>
                       <Col xs="4">
-                        <img
+                        <img 
                           className="responsive"
                           alt="ph"
                           src={ph}
