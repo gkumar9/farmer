@@ -23,12 +23,14 @@ import {
   Col,
   Container
 } from "react-bootstrap";
-import farmerimg from "./farmerpic.jpg";
+import farmerimg from "./Ramanand.jpg";
 import farm2 from "./farm2.png";
 import farm1 from "./farm1.png";
 import "./mobile.css";
 import AOS from "aos";
-import simpleParallax from 'simple-parallax-js';
+import simpleParallax from "simple-parallax-js";
+
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import "aos/dist/aos.css";
 AOS.init();
@@ -38,16 +40,29 @@ class Header extends Component {
     return (
       <div>
         <Navbar collapseOnSelect expand="md" bg="light" variant="light">
-          <Navbar.Brand href="#" style={{ color: "green" }}>
+          <Navbar.Brand href="./lp/" style={{ color: "green" }}>
             Claro <b>Agro</b>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto" />
             <Nav>
-              <Nav.Link href="#">Home</Nav.Link>
-              <Nav.Link href="#">About us</Nav.Link>
-              <Nav.Link>Careers</Nav.Link>
+              <Nav.Link>
+                {" "}
+                <AnchorLink href="#farmer">Farmer</AnchorLink>
+              </Nav.Link>
+              <Nav.Link>
+                {" "}
+                <AnchorLink href="#turmeric">Turmeric</AnchorLink>
+              </Nav.Link>
+              <Nav.Link>
+                {" "}
+                <AnchorLink href="#gopalgunj">Gopalgunj</AnchorLink>
+              </Nav.Link>
+              <Nav.Link>
+                {" "}
+                <AnchorLink href="#contactus">Contact us</AnchorLink>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
@@ -58,24 +73,28 @@ class Header extends Component {
 
 class App extends Component {
   componentDidMount() {
-    var image = document.getElementsByClassName('thumbnail');
-    new simpleParallax(image, {
-      delay: .6,
-	    transition: 'cubic-bezier(0,0,0,1)'
-    })
+    var image = document.getElementsByClassName("thumbnail");
+    // new simpleParallax(image, {
+    //   delay: 0.6,
+    //   transition: "cubic-bezier(0,0,0,1)"
+    // });
     if (window.screen.width >= 480) {
       this.props.history.push("/");
     }
   }
   render() {
-    
     return (
       <div>
         <Container>
           <Header />
           <Jumbotron fluid="true">
             <div className="hero-image">
-              <img fluid="true" className="thumbnail" src={farmerimg} alt="farmer pic" />
+              <img
+                fluid="true"
+                className="thumbnail"
+                src={farmerimg}
+                alt="farmer pic"
+              />
             </div>
             <div
               data-aos="fade-down"
@@ -88,16 +107,17 @@ class App extends Component {
               <div className="title">
                 <h5>Know your farmer</h5>
                 <h2 style={{ color: "#53e253" }}>
-                  Santosh <b>Thankur</b>
+                  Ramanand <b>Prasad</b>
                 </h2>
                 <small style={{ color: "lightgray" }}>
-                  Rau pusa, samastipur
+                  Ramchandar Pur, Gopalganj
                 </small>
               </div>
             </div>
           </Jumbotron>
 
           <Jumbotron
+          id="farmer"
             fluid
             style={{
               backgroundColor: "#E7DD74",
@@ -113,10 +133,14 @@ class App extends Component {
               data-aos-easing="ease-in-out"
             >
               <p>
-                Santosh dropped out of school in Grade 8 as the sole breadearner
-                of his family. He joined Clam in 2013 and since then has saved
-                over Rs 1,24,343 in agricultural input cost with clean energy
-                and irrigation services in a span of 6 years.{" "}
+                Ramanand Prasad was on boarded as a Farmer Partner at Claro Agro
+                in 2018. He has been using our Solar Irrigation Service
+                (IAAS/Mini Grid) via the Mobile Solar trolley (Patvan). In a
+                span of 1 year, he has generated significant savings by
+                offsetting expensive diesel and in the process has made a real
+                contribution to the environment as well. The additional savings
+                now help him spend more on healthcare for his family and
+                education for his children.
               </p>{" "}
             </div>
           </Jumbotron>
@@ -137,7 +161,8 @@ class App extends Component {
               data-aos-easing="ease-in-out"
             >
               <div>
-                <img className="thumbnail"
+                <img
+                  className="thumbnail"
                   style={{ width: "-webkit-fill-available" }}
                   fluid="true"
                   src={farm1}
@@ -163,11 +188,10 @@ class App extends Component {
               data-aos-easing="ease-in-out"
             >
               <p>
-                Born on 12th Sep 1978, Santosh is the second child of his
-                parents. He hails from Rau Pusa village in the district of
-                Samastipur, Bihar. He owns 37 katha of turmeric farmland, sowing
-                the Morangia variety in the month of May. He has been in the
-                profession for over 20 years.
+                Ramanand Prasad hails from ramchandar pur village in the
+                district of gopalganj in bihar. He owns 1 katha acres of
+                farmland on which he is growing spices, sowing the local
+                variety. He has been practicing farming for 10 years.
               </p>
             </div>
           </Jumbotron>
@@ -188,7 +212,8 @@ class App extends Component {
               data-aos-easing="ease-in-out"
             >
               <div>
-                <img className="thumbnail"
+                <img
+                  className="thumbnail"
                   style={{ width: "-webkit-fill-available" }}
                   fluid="true"
                   src={farm2}
@@ -214,11 +239,10 @@ class App extends Component {
               data-aos-easing="ease-in-out"
             >
               <p>
-                Currently he lives with his wife, younger brother and 3
-                children, all of them attending the community schools.
-                Encouraged by the partnership with Claro Minigrid Livelihod
-                Scheme, he plans to completely switch his house and farms into
-                clean energy technologies.
+                Currently he lives with his 10 family member. Encouraged by the
+                partnership with Claro Agro, he plans to move up the value chain
+                and further improve his income and improve the lives of his
+                family.
               </p>
             </div>
           </Jumbotron>
@@ -250,12 +274,12 @@ class App extends Component {
                     color: "gray"
                   }}
                 >
-                  Our Impact
+                  Our Intervention
                 </h3>
                 <ListGroup variant="flush">
                   <ListGroup.Item>
                     <Row>
-                      <Col xs="3">
+                      <Col xs="3" md="3">
                         <img
                           className="responsive"
                           alt="CO2"
@@ -263,64 +287,69 @@ class App extends Component {
                           style={{ width: "46px", marginLeft: "-11px" }}
                         />
                       </Col>
-                      <Col xs="9">
+                      <Col xs="9" md="9">
                         <span>
-                          <b>1212121 tonnes</b>
+                          <b>Mobile Solar trolley (Patvan)</b>
                         </span>
                         <p>
-                          <small>CO2 avoided</small>
+                          <small>Intervention Type</small>
                         </p>
                       </Col>
                     </Row>
                   </ListGroup.Item>
                   <ListGroup.Item>
                     <Row>
-                      <Col xs="3">
+                      <Col xs="3" md="3">
                         <img
                           className="responsive"
-                          alt="flow"
-                          src={FLOW}
+                          alt="CO2"
+                          src={CO2}
                           style={{ width: "46px", marginLeft: "-11px" }}
                         />
                       </Col>
-                      <Col xs="9">
+                      <Col xs="9" md="9">
                         <span>
-                          <b>23234324 kL</b>
+                          <b>1</b>
                         </span>
                         <p>
-                          <small>Water pumped</small>
+                          <small>Intervention Size</small>
                         </p>
                       </Col>
                     </Row>
                   </ListGroup.Item>
                   <ListGroup.Item>
                     <Row>
-                      <Col xs="3">
+                      <Col xs="3" md="3">
                         <img
                           className="responsive"
-                          alt="energy"
-                          src={SOLARENERGY}
+                          alt="CO2"
+                          src={CO2}
                           style={{ width: "46px", marginLeft: "-11px" }}
                         />
                       </Col>
-                      <Col xs="9">
+                      <Col xs="9" md="9">
                         <span>
-                          <b>1712.3 GWh</b>
+                          <b>2018</b>
                         </span>
                         <p>
-                          <small>Energy generated</small>
+                          <small>Installed and first used by Ramanand</small>
                         </p>
                       </Col>
                     </Row>
                   </ListGroup.Item>
-                </ListGroup>
+                  </ListGroup>
               </div>
             </div>
           </Jumbotron>
 
-          <Jumbotron fluid="true">
+          <Jumbotron id="turmeric" fluid="true">
             <div className="hero-image">
-              <img className="thumbnail" fluid="true" src={Imgturmeric} alt="farmer pic" />
+              <img
+                className="thumbnail"
+                fluid="true"
+                src={Imgturmeric}
+                alt="farmer pic"
+              />
             </div>
             <div
               data-aos="fade-up"
@@ -385,7 +414,8 @@ class App extends Component {
               data-aos-easing="ease-in-out"
             >
               <div>
-                <img className="thumbnail"
+                <img
+                  className="thumbnail"
                   style={{
                     maxHeight: "fit-content",
                     width: "-webkit-fill-available"
@@ -424,9 +454,10 @@ class App extends Component {
             </div>
           </Jumbotron>
 
-          <Jumbotron fluid="true">
+          <Jumbotron id="gopalgunj" fluid="true">
             <div className="hero-image">
-              <img className="thumbnail"
+              <img
+                className="thumbnail"
                 fluid="true"
                 style={{ width: "-webkit-fill-available" }}
                 src={land}
@@ -442,7 +473,7 @@ class App extends Component {
               data-aos-easing="ease-in-out"
             >
               <div className="titleturmeric">
-                <h2>The farmland and soil</h2>
+                <h2>Farmland & The geography</h2>
               </div>
             </div>
           </Jumbotron>
@@ -463,20 +494,12 @@ class App extends Component {
               data-aos-easing="ease-in-out"
             >
               <p>
-                Santosh owns 15 plots of land in the block of Rau Pusa. The area
-                falls under middle Gangetic plain agro climatic zone. The lands
-                of this zone which are alluvial plains are sloppy towards the
-                south east direction with a very low gradient as evidenced by
-                the direction in which the rivers flow.
-              </p>
-              <p>
-                The rivers of Burhi Gandak, Baya, Kosi, Kamla, Kareh, Jhamwari
-                and Balan flow in Samastipur. As all the rivers and rivulets
-                originate in the high Himalayas, dominated by mechanical
-                weathering of rocks, the soils are mostly light to medium light
-                textured except those away from the direct influence of the
-                rivers.
-              </p>
+                    Gopalganj is one of the administrative districts in the
+                    Indian state of Bihar. The district headquarters is the town
+                    of Gopalganj, and the district is part of Saran Division.
+                    Major languages spoken are Bhojpuri, and Hindi.
+                  </p>
+                  
             </div>
           </Jumbotron>
 
@@ -496,7 +519,8 @@ class App extends Component {
               data-aos-easing="ease-in-out"
             >
               <div>
-                <img className="thumbnail"
+                <img
+                  className="thumbnail"
                   style={{
                     maxHeight: "fit-content",
                     width: "-webkit-fill-available"
@@ -525,22 +549,33 @@ class App extends Component {
               data-aos-once="true"
               data-aos-easing="ease-in-out"
             >
-              <p>
-                The upland soils are well drained to moderately well drained.
-                The medium low lands and the low lands soils, although of good
-                to moderate permeability, have become some what poorly drained
-                due to high water table in the areas. The soils are moderately
-                rich to poor in nitrogen (especially in Gopalganj and Siwan
-                districts), moderate to very low in available phosphorus and
-                medium to high in available potash. The soils are showing
-                symptoms of deficiency of zinc and iron mostly induced by high
-                available calcium.
-              </p>
+              <p>Facts about Gopalganj:</p>
+                  <p>
+                    <b>DEMOGRAPHIC</b>
+                    <ul>
+                      <li>Population: 2,558,037 (2.62% of the state)</li>
+                      <li>Women: 1,288,360 (50.12%)</li>
+                      <li>Rural population: 2,018,807 (93.93%)</li>
+                    </ul>
+                  </p>
+                  <p>
+                    <b>SOIL PROFILE:</b>
+                    <ul>
+                      <li>Total rainfall (mm): 1040-1450</li>
+                      <li>Soil type: Sandy loam</li>
+                      <li>Soil acidity (pH) :6.5-8.4</li>
+                    </ul>
+                  </p>
+                  <p>
+                    <b>WEATHER/ENVIRONMENT:</b>
+                    <ul>
+                      <li>Annual rainfall(mm): 1040-1450</li>
+                      <li>Temperature: 36.6 (max)-7.7 (min)</li>
+                    </ul>
+                  </p>
               <div style={{ marginTop: "10vw" }}>
                 <Map
-                scrollwheel={
-                        false
-                      }
+                  scrollwheel={false}
                   containerStyle={containerStyle}
                   mapTypeControl={false}
                   gestureHandling={"greedy"}
@@ -549,15 +584,15 @@ class App extends Component {
                   fullscreenControl={false}
                   google={this.props.google}
                   initialCenter={{
-                    lat: 25.9845,
-                    lng: 85.6807
+                    lat: 26.40703,
+                    lng: 84.42117
                   }}
-                  zoom={10}
+                  zoom={12}
                 >
                   <Marker
                     position={{
-                      lat: 25.9845,
-                      lng: 85.6807
+                      lat: 26.40703,
+                    lng: 84.42117
                     }}
                     name={"Current location"}
                   />
@@ -566,7 +601,7 @@ class App extends Component {
             </div>
           </Jumbotron>
 
-          <Jumbotron
+          {/* <Jumbotron
             fluid
             style={{
               padding: "7vw"
@@ -599,7 +634,7 @@ class App extends Component {
                   <ListGroup.Item>
                     <Row>
                       <Col xs="4">
-                        <img 
+                        <img
                           className="responsive"
                           alt="rain"
                           src={rain}
@@ -619,7 +654,7 @@ class App extends Component {
                   <ListGroup.Item>
                     <Row>
                       <Col xs="4">
-                        <img 
+                        <img
                           className="responsive"
                           alt="soil"
                           src={soil}
@@ -639,7 +674,7 @@ class App extends Component {
                   <ListGroup.Item>
                     <Row>
                       <Col xs="4">
-                        <img 
+                        <img
                           className="responsive"
                           alt="temp"
                           src={temp}
@@ -659,7 +694,7 @@ class App extends Component {
                   <ListGroup.Item>
                     <Row>
                       <Col xs="4">
-                        <img 
+                        <img
                           className="responsive"
                           alt="ph"
                           src={ph}
@@ -679,9 +714,9 @@ class App extends Component {
                 </ListGroup>
               </div>
             </div>
-          </Jumbotron>
+          </Jumbotron> */}
 
-          <Jumbotron fluid="true">
+          <Jumbotron id="contactus" fluid="true">
             <div
               style={{
                 padding: "7vw",
