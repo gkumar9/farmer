@@ -8,10 +8,6 @@ import Imgturmeric from "./imgturmeric.png";
 import Imgplant from "./imgplant.png";
 import land from "./land.png";
 import landsoil from "./landsoil.png";
-import rain from "./rain.png";
-import soil from "./soil.png";
-import temp from "./temp.png";
-import ph from "./ph.png";
 import backgroundimg from "./background.png";
 import {
   Jumbotron,
@@ -23,9 +19,9 @@ import {
   Row,
   Col,
   Container
-  // Container
 } from "react-bootstrap";
 import farmerimg from "./Ramanand.jpg";
+import logo from "./logonew.jpg";
 import farm2 from "./farm2.png";
 import farm1 from "./farm1.png";
 import "./App.css";
@@ -39,8 +35,17 @@ class Header extends Component {
     return (
       <div>
         <Navbar collapseOnSelect expand="md" bg="light" variant="light">
-          <Navbar.Brand href="./lp/" style={{ color: "green" }}>
+          {/* <Navbar.Brand href="./lp/" style={{ color: "green" }}>
             Claro <b>Agro</b>
+          </Navbar.Brand> */}
+          <Navbar.Brand href="www.claroagro.com/lp/">
+            <img
+              src={logo}
+              width="180"
+              height="70"
+              className="d-inline-block align-top"
+              alt="React Bootstrap logo"
+            />{" "}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -78,7 +83,7 @@ class App extends Component {
     //   transition: 'cubic-bezier(0,0,0,1)'
     // })
     if (window.screen.width <= 480) {
-      this.props.history.push("/mobile");
+      this.props.history.push("./mobile");
     }
   }
   render() {
@@ -121,7 +126,7 @@ class App extends Component {
                   marginTop: "-110px",
                   fontSize: "130px",
                   fontFamily: "-webkit-body",
-                  color: "#9bd29b"
+                  color: "darkkhaki"
                 }}
               >
                 <b>farmer</b>
@@ -142,9 +147,9 @@ class App extends Component {
             id="farmer"
             fluid
             style={{
-              fontColor: "black",
+              color: "black",
               minHeight: "460px",
-              backgroundColor: "#E7DD74"
+              backgroundColor: "#f8eb3c"
             }}
           >
             <div className="section">
@@ -152,7 +157,6 @@ class App extends Component {
                 <Col style={{ marginTop: "40px" }} xs="5" md="5">
                   <p
                     style={{
-                      color: "white",
                       fontSize: "40px"
                     }}
                   >
@@ -160,7 +164,6 @@ class App extends Component {
                   </p>
                   <p
                     style={{
-                      color: "white",
                       // fontSize: "18px",
                       marginTop: "-30px"
                     }}
@@ -227,7 +230,7 @@ class App extends Component {
             <div className="section">
               <Row>
                 <Col xs="3" md="3">
-                  <div style={{ marginTop: "-100px" }}>
+                  <div style={{ marginTop: "-80px" }}>
                     {/* <div
                       data-aos="fade-up"
                       data-aos-offset="200"
@@ -246,7 +249,7 @@ class App extends Component {
                   </div>
                 </Col>
                 <Col xs="3" md="3">
-                  <div style={{ marginTop: "-100px" }}>
+                  <div style={{ marginTop: "-80px" }}>
                     <img
                       className="thumbnail"
                       width="65%"
@@ -260,7 +263,7 @@ class App extends Component {
               </Row>
               <Row>
                 <Col xs="5" md="5">
-                  <div style={{ marginTop: "70px" }}>
+                  <div style={{ marginTop: "70px", color: "black" }}>
                     <p>
                       Ramanand Prasad hails from ramchandar pur village in the
                       district of gopalganj in bihar. He owns 1 katha acres of
@@ -356,7 +359,7 @@ class App extends Component {
 
         <Jumbotron
           id="turmeric"
-          style={{ minHeight: "350px", backgroundColor: "#F7E7E7" }}
+          style={{ minHeight: "350px", backgroundColor: "#dd9cc6" }}
         >
           <div
             data-aos="fade-right"
@@ -371,7 +374,7 @@ class App extends Component {
                 style={{
                   fontSize: "94px",
                   fontFamily: "-webkit-body",
-                  color: "gray"
+                  color: "#343a40"
                 }}
               >
                 &nbsp;Get to know
@@ -382,7 +385,7 @@ class App extends Component {
                   marginLeft: "115px",
                   fontFamily: "-webkit-body",
                   fontSize: "80px",
-                  color: "#e1a3a3"
+                  color: "#646060"
                 }}
               >
                 about
@@ -392,7 +395,7 @@ class App extends Component {
                   marginTop: "-116px",
                   fontSize: "130px",
                   fontFamily: "-webkit-body",
-                  color: "#739d73"
+                  color: "#646060"
                 }}
               >
                 <b>turmeric</b>
@@ -412,7 +415,7 @@ class App extends Component {
           <Jumbotron fluid style={{ minHeight: "670px" }}>
             <div className="section">
               <Row>
-                <Col xs="5" md="5">
+                <Col xs="5" md="5" style={{ color: "black" }}>
                   <p>
                     Turmeric is one of the most versatile and widely used spices
                     known to man. It adds flavour and colour to all kinds of
@@ -478,7 +481,7 @@ class App extends Component {
           style={{
             marginTop: "-50px",
             minHeight: "350px",
-            backgroundColor: "	#EDF3E9"
+            backgroundColor: "	#ff5959"
           }}
         >
           <div
@@ -494,7 +497,7 @@ class App extends Component {
                 style={{
                   fontSize: "120px",
                   fontFamily: "-webkit-body",
-                  color: "gray"
+                  color: "wheat"
                 }}
               >
                 Farmland
@@ -516,7 +519,7 @@ class App extends Component {
                   marginLeft: "139px",
                   fontSize: "94px",
                   fontFamily: "-webkit-body",
-                  color: "#9bd29b"
+                  color: "lightgray"
                 }}
               >
                 <b>The geography</b>
@@ -536,7 +539,7 @@ class App extends Component {
           <Jumbotron fluid="true" style={{ minHeight: "690px" }}>
             <div className="section">
               <Row>
-                <Col xs="5" md="5">
+                <Col style={{ color: "black" }} xs="5" md="5">
                   <p>
                     Gopalganj is one of the administrative districts in the
                     Indian state of Bihar. The district headquarters is the town
@@ -605,9 +608,9 @@ class App extends Component {
         <Jumbotron
           fluid
           style={{
-            marginTop: "-5%",
+            marginTop: "-9%",
             minHeight: "480px",
-            backgroundColor: "	#D0EDBD"
+            backgroundColor: "	whitesmoke"
           }}
         >
           <div
@@ -705,7 +708,7 @@ class App extends Component {
           >
             <div className="section" style={{ marginTop: "80px" }}>
               <Row>
-                <Col xs="7" md="7" />
+                <Col xs="8" md="8" />
                 <Col xs="3" md="3">
                   <div>
                     <div
@@ -716,8 +719,8 @@ class App extends Component {
                         borderRadius: "5px"
                       }}
                     >
-                      <span style={{ color: "#51c7ec", fontSize: "xx-large" }}>
-                        <b> Write to Santosh</b>
+                      <span style={{ color: "#51c7ec", fontSize: "x-large" }}>
+                        Write to Ramanand
                       </span>
                       <br />
                       <small
@@ -766,7 +769,7 @@ class App extends Component {
                     </div>
                   </div>
                 </Col>
-                <Col xs="2" md="2" />
+                <Col xs="1" md="1" />
               </Row>
             </div>
           </div>

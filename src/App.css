@@ -81,3 +81,9 @@ a:hover {
 a {
   color: #8c8585;
 }
+.btn-link:hover{
+  text-decoration: none
+}
+.btn-link{
+  color:#c6c9cb
+}

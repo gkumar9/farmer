@@ -29,7 +29,7 @@ import farm1 from "./farm1.png";
 import "./mobile.css";
 import AOS from "aos";
 import simpleParallax from "simple-parallax-js";
-
+import logo from "./logonew.jpg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import "aos/dist/aos.css";
@@ -40,8 +40,14 @@ class Header extends Component {
     return (
       <div>
         <Navbar collapseOnSelect expand="md" bg="light" variant="light">
-          <Navbar.Brand href="./lp/" style={{ color: "green" }}>
-            Claro <b>Agro</b>
+          <Navbar.Brand href="www.claroagro.com/lp/">
+            <img
+              src={logo}
+              width="180"
+              height="70"
+              className="d-inline-block align-top"
+              alt="React Bootstrap logo"
+            />{" "}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -73,13 +79,13 @@ class Header extends Component {
 
 class App extends Component {
   componentDidMount() {
-    var image = document.getElementsByClassName("thumbnail");
+    // var image = document.getElementsByClassName("thumbnail");
     // new simpleParallax(image, {
     //   delay: 0.6,
     //   transition: "cubic-bezier(0,0,0,1)"
     // });
     if (window.screen.width >= 480) {
-      this.props.history.push("/");
+      this.props.history.push("./");
     }
   }
   render() {
@@ -117,7 +123,7 @@ class App extends Component {
           </Jumbotron>
 
           <Jumbotron
-          id="farmer"
+            id="farmer"
             fluid
             style={{
               backgroundColor: "#E7DD74",
@@ -337,7 +343,7 @@ class App extends Component {
                       </Col>
                     </Row>
                   </ListGroup.Item>
-                  </ListGroup>
+                </ListGroup>
               </div>
             </div>
           </Jumbotron>
@@ -494,12 +500,11 @@ class App extends Component {
               data-aos-easing="ease-in-out"
             >
               <p>
-                    Gopalganj is one of the administrative districts in the
-                    Indian state of Bihar. The district headquarters is the town
-                    of Gopalganj, and the district is part of Saran Division.
-                    Major languages spoken are Bhojpuri, and Hindi.
-                  </p>
-                  
+                Gopalganj is one of the administrative districts in the Indian
+                state of Bihar. The district headquarters is the town of
+                Gopalganj, and the district is part of Saran Division. Major
+                languages spoken are Bhojpuri, and Hindi.
+              </p>
             </div>
           </Jumbotron>
 
@@ -550,29 +555,29 @@ class App extends Component {
               data-aos-easing="ease-in-out"
             >
               <p>Facts about Gopalganj:</p>
-                  <p>
-                    <b>DEMOGRAPHIC</b>
-                    <ul>
-                      <li>Population: 2,558,037 (2.62% of the state)</li>
-                      <li>Women: 1,288,360 (50.12%)</li>
-                      <li>Rural population: 2,018,807 (93.93%)</li>
-                    </ul>
-                  </p>
-                  <p>
-                    <b>SOIL PROFILE:</b>
-                    <ul>
-                      <li>Total rainfall (mm): 1040-1450</li>
-                      <li>Soil type: Sandy loam</li>
-                      <li>Soil acidity (pH) :6.5-8.4</li>
-                    </ul>
-                  </p>
-                  <p>
-                    <b>WEATHER/ENVIRONMENT:</b>
-                    <ul>
-                      <li>Annual rainfall(mm): 1040-1450</li>
-                      <li>Temperature: 36.6 (max)-7.7 (min)</li>
-                    </ul>
-                  </p>
+              <p>
+                <b>DEMOGRAPHIC</b>
+                <ul>
+                  <li>Population: 2,558,037 (2.62% of the state)</li>
+                  <li>Women: 1,288,360 (50.12%)</li>
+                  <li>Rural population: 2,018,807 (93.93%)</li>
+                </ul>
+              </p>
+              <p>
+                <b>SOIL PROFILE:</b>
+                <ul>
+                  <li>Total rainfall (mm): 1040-1450</li>
+                  <li>Soil type: Sandy loam</li>
+                  <li>Soil acidity (pH) :6.5-8.4</li>
+                </ul>
+              </p>
+              <p>
+                <b>WEATHER/ENVIRONMENT:</b>
+                <ul>
+                  <li>Annual rainfall(mm): 1040-1450</li>
+                  <li>Temperature: 36.6 (max)-7.7 (min)</li>
+                </ul>
+              </p>
               <div style={{ marginTop: "10vw" }}>
                 <Map
                   scrollwheel={false}
@@ -592,7 +597,7 @@ class App extends Component {
                   <Marker
                     position={{
                       lat: 26.40703,
-                    lng: 84.42117
+                      lng: 84.42117
                     }}
                     name={"Current location"}
                   />
@@ -741,8 +746,8 @@ class App extends Component {
                 //   borderRadius: "5px"
                 // }}
                 >
-                  <span style={{ color: "#51c7ec", fontSize: "xx-large" }}>
-                    <b> Write to Santosh</b>
+                  <span style={{ color: "#51c7ec", fontSize: "x-large" }}>
+                    Write to Ramanand
                   </span>
                   <br />
                   <small
