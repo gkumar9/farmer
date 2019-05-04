@@ -179,7 +179,7 @@ class App extends Component {
                   >
                     Ramanand Prasad was on boarded as a Farmer Partner at Claro
                     Agro in 2018. He has been using our Solar Irrigation Service
-                    (IAAS/Mini Grid) via the Mobile Solar trolley (Patvan). In a
+                    (Mini Grid) via the Mobile Solar trolley (Patvan). In a
                     span of 1 year, he has generated significant savings by
                     offsetting expensive diesel and in the process has made a
                     real contribution to the environment as well. The additional
@@ -731,7 +731,7 @@ class App extends Component {
                         }}
                       >
                         We will be happy to pass your thank you note or feedback
-                        message to our friend, Santosh.
+                        message to our friend, Ramanand.
                       </small>
                       <div style={{ marginTop: "20px" }}>
                         <Form>

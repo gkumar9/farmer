@@ -295,7 +295,7 @@ class App extends Component {
                       </Col>
                       <Col xs="9" md="9">
                         <span>
-                          <b>Mobile Solar trolley (Patvan)</b>
+                          <b>Minigrid</b>
                         </span>
                         <p>
                           <small>Intervention Type</small>
@@ -315,7 +315,7 @@ class App extends Component {
                       </Col>
                       <Col xs="9" md="9">
                         <span>
-                          <b>1</b>
+                          <b>20 kW</b>
                         </span>
                         <p>
                           <small>Intervention Size</small>
@@ -758,7 +758,7 @@ class App extends Component {
                     }}
                   >
                     We will be happy to pass your thank you note or feedback
-                    message to our friend, Santosh.
+                    message to our friend, Ramanand.
                   </small>
                   <div style={{ marginTop: "20px" }}>
                     <Form>
