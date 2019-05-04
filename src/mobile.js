@@ -41,7 +41,7 @@ class Header extends Component {
   render() {
     return (
       <div>
-        <Navbar collapseOnSelect expand="md" bg="light" variant="light">
+        <Navbar id="head" collapseOnSelect expand="md" bg="light" variant="light">
           <Navbar.Brand href="https://www.claroagro.com/lp/" target="_blank">
             <img
               src={logo}
@@ -81,6 +81,15 @@ class Header extends Component {
 
 class App extends Component {
   componentDidMount() {
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
     // var image = document.getElementsByClassName("thumbnail");
     // new simpleParallax(image, {
     //   delay: 0.6,
@@ -94,6 +103,7 @@ class App extends Component {
     return (
       <div>
         <Container>
+        <AnchorLink href="#head"><button  id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button></AnchorLink>
           <Header />
           <Jumbotron fluid="true">
             <div className="hero-image">

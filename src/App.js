@@ -36,7 +36,7 @@ class Header extends Component {
   render() {
     return (
       <div>
-        <Navbar collapseOnSelect expand="md" bg="light" variant="light">
+        <Navbar id="head" collapseOnSelect expand="md" bg="light" variant="light">
           {/* <Navbar.Brand href="./lp/" style={{ color: "green" }}>
             Claro <b>Agro</b>
           </Navbar.Brand> */}
@@ -79,6 +79,15 @@ class Header extends Component {
 
 class App extends Component {
   componentDidMount() {
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
     // var image = document.getElementsByClassName('thumbnail');
     // new simpleParallax(image, {
     //   delay: .6,
@@ -91,6 +100,7 @@ class App extends Component {
   render() {
     return (
       <div>
+       <AnchorLink href="#head"><button  id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button></AnchorLink>
         <Header />
 
         <Jumbotron style={{ minHeight: "300px" }}>
