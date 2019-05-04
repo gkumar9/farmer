@@ -40,7 +40,7 @@ class Header extends Component {
     return (
       <div>
         <Navbar collapseOnSelect expand="md" bg="light" variant="light">
-          <Navbar.Brand href="www.claroagro.com/lp/">
+          <Navbar.Brand href="https://www.claroagro.com/lp/" target="_blank">
             <img
               src={logo}
               width="180"

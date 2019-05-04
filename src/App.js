@@ -38,7 +38,7 @@ class Header extends Component {
           {/* <Navbar.Brand href="./lp/" style={{ color: "green" }}>
             Claro <b>Agro</b>
           </Navbar.Brand> */}
-          <Navbar.Brand href="www.claroagro.com/lp/">
+          <Navbar.Brand href="https://www.claroagro.com/lp/" target="_blank">
             <img
               src={logo}
               width="180"
