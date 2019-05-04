@@ -3,6 +3,8 @@ import { Map, Marker, GoogleApiWrapper } from "google-maps-react";
 import CO2 from "./1.png";
 import FLOW from "./2.png";
 import SOLARENERGY from "./3.png";
+import MINIGRID from "./Minigrid.png";
+import CALENDER from "./calender.png";
 import Imgturmeric from "./imgturmeric.png";
 import Imgplant from "./imgplant.png";
 import land from "./land.png";
@@ -283,14 +285,14 @@ class App extends Component {
                   Our Intervention
                 </h3>
                 <ListGroup variant="flush">
-                  <ListGroup.Item>
+                <ListGroup.Item>
                     <Row>
                       <Col xs="3" md="3">
                         <img
                           className="responsive"
                           alt="CO2"
-                          src={CO2}
-                          style={{ width: "46px", marginLeft: "-11px" }}
+                          src={MINIGRID}
+                          style={{ opacity:'0.5',width: "70px", marginLeft: "-11px" }}
                         />
                       </Col>
                       <Col xs="9" md="9">
@@ -309,8 +311,8 @@ class App extends Component {
                         <img
                           className="responsive"
                           alt="CO2"
-                          src={CO2}
-                          style={{ width: "46px", marginLeft: "-11px" }}
+                          src={SOLARENERGY}
+                          style={{ width: "70px", marginLeft: "-11px" }}
                         />
                       </Col>
                       <Col xs="9" md="9">
@@ -329,7 +331,7 @@ class App extends Component {
                         <img
                           className="responsive"
                           alt="CO2"
-                          src={CO2}
+                          src={CALENDER}
                           style={{ width: "46px", marginLeft: "-11px" }}
                         />
                       </Col>
@@ -338,12 +340,12 @@ class App extends Component {
                           <b>2018</b>
                         </span>
                         <p>
-                          <small>Installed and first used by Ramanand</small>
+                          <small>Installed and first</small>
                         </p>
                       </Col>
                     </Row>
                   </ListGroup.Item>
-                </ListGroup>
+                 </ListGroup>
               </div>
             </div>
           </Jumbotron>
