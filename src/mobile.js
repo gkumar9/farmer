@@ -23,7 +23,7 @@ import {
   Col,
   Container
 } from "react-bootstrap";
-import farmerimg from "./Ramanand.jpg";
+import farmerimg from "./manoj.jpg";
 import farm2 from "./farm2.png";
 import farm1 from "./farm1.png";
 import "./mobile.css";
@@ -113,7 +113,7 @@ class App extends Component {
               <div className="title">
                 <h5>Know your farmer</h5>
                 <h2 style={{ color: "#53e253" }}>
-                  Ramanand <b>Prasad</b>
+                Manoj <b>Singh</b>
                 </h2>
                 <small style={{ color: "lightgray" }}>
                   Ramchandar Pur, Gopalganj
@@ -139,14 +139,14 @@ class App extends Component {
               data-aos-easing="ease-in-out"
             >
               <p>
-                Ramanand Prasad was on boarded as a Farmer Partner at Claro Agro
-                in 2018. He has been using our Solar Irrigation Service
-                (IAAS/Mini Grid) via the Mobile Solar trolley (Patvan). In a
-                span of 1 year, he has generated significant savings by
-                offsetting expensive diesel and in the process has made a real
-                contribution to the environment as well. The additional savings
-                now help him spend more on healthcare for his family and
-                education for his children.
+              Manoj Singh was on boarded as a Farmer Partner at Claro
+                    Agro in 2018. He has been using our Solar Irrigation Service
+                    (Mini Grid) via the Mobile Solar trolley (Patvan). In a
+                    span of 1 year, he has generated significant savings by
+                    offsetting expensive diesel and in the process has made a
+                    real contribution to the environment as well. The additional
+                    savings now help him spend more on healthcare for his family
+                    and education for his children.
               </p>{" "}
             </div>
           </Jumbotron>
@@ -194,10 +194,10 @@ class App extends Component {
               data-aos-easing="ease-in-out"
             >
               <p>
-                Ramanand Prasad hails from ramchandar pur village in the
-                district of gopalganj in bihar. He owns 1 katha acres of
-                farmland on which he is growing spices, sowing the local
-                variety. He has been practicing farming for 10 years.
+              Manoj Singh hails from ramchandar pur village in the
+                      district of gopalganj in Bihar. He owns 3 katha acres of
+                      farmland on which he is growing spices, sowing the local
+                      variety. He has been practicing farming for 10 years.
               </p>
             </div>
           </Jumbotron>
@@ -245,10 +245,10 @@ class App extends Component {
               data-aos-easing="ease-in-out"
             >
               <p>
-                Currently he lives with his 10 family member. Encouraged by the
-                partnership with Claro Agro, he plans to move up the value chain
-                and further improve his income and improve the lives of his
-                family.
+              Currently he lives with his 8 family member. Encouraged
+                      by the partnership with Claro Agro, he plans to move up
+                      the value chain and further improve his income and improve
+                      the lives of his family.
               </p>
             </div>
           </Jumbotron>
@@ -295,7 +295,7 @@ class App extends Component {
                       </Col>
                       <Col xs="9" md="9">
                         <span>
-                          <b>Mobile Solar trolley (Patvan)</b>
+                          <b>Minigrid</b>
                         </span>
                         <p>
                           <small>Intervention Type</small>
@@ -315,7 +315,7 @@ class App extends Component {
                       </Col>
                       <Col xs="9" md="9">
                         <span>
-                          <b>1</b>
+                          <b>20 kW</b>
                         </span>
                         <p>
                           <small>Intervention Size</small>
@@ -338,7 +338,7 @@ class App extends Component {
                           <b>2018</b>
                         </span>
                         <p>
-                          <small>Installed and first used by Ramanand</small>
+                          <small>Installed and first used</small>
                         </p>
                       </Col>
                     </Row>
@@ -589,15 +589,15 @@ class App extends Component {
                   fullscreenControl={false}
                   google={this.props.google}
                   initialCenter={{
-                    lat: 26.40703,
-                    lng: 84.42117
+                    lat: 26.40757,
+                      lng: 84.42232
                   }}
                   zoom={12}
                 >
                   <Marker
                     position={{
-                      lat: 26.40703,
-                      lng: 84.42117
+                      lat: 26.40757,
+                      lng: 84.42232
                     }}
                     name={"Current location"}
                   />
@@ -747,7 +747,7 @@ class App extends Component {
                 // }}
                 >
                   <span style={{ color: "#51c7ec", fontSize: "x-large" }}>
-                    Write to Ramanand
+                    Write to Manoj
                   </span>
                   <br />
                   <small
@@ -758,7 +758,7 @@ class App extends Component {
                     }}
                   >
                     We will be happy to pass your thank you note or feedback
-                    message to our friend, Santosh.
+                    message to our friend, Manoj.
                   </small>
                   <div style={{ marginTop: "20px" }}>
                     <Form>

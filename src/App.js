@@ -20,7 +20,7 @@ import {
   Col,
   Container
 } from "react-bootstrap";
-import farmerimg from "./Ramanand.jpg";
+import farmerimg from "./manoj.jpg";
 import logo from "./logonew.jpg";
 import farm2 from "./farm2.png";
 import farm1 from "./farm1.png";
@@ -160,12 +160,12 @@ class App extends Component {
                       fontSize: "40px"
                     }}
                   >
-                    Ramanand Prasad
+                    Manoj Singh
                   </p>
                   <p
                     style={{
                       // fontSize: "18px",
-                      marginTop: "-30px"
+                      marginTop: "-25px"
                     }}
                   >
                     Ramchandar Pur, Gopalganj
@@ -177,9 +177,9 @@ class App extends Component {
                       marginTop: "40px"
                     }}
                   >
-                    Ramanand Prasad was on boarded as a Farmer Partner at Claro
+                    Manoj Singh was on boarded as a Farmer Partner at Claro
                     Agro in 2018. He has been using our Solar Irrigation Service
-                    (IAAS/Mini Grid) via the Mobile Solar trolley (Patvan). In a
+                    (Mini Grid) via the Mobile Solar trolley (Patvan). In a
                     span of 1 year, he has generated significant savings by
                     offsetting expensive diesel and in the process has made a
                     real contribution to the environment as well. The additional
@@ -265,11 +265,11 @@ class App extends Component {
                 <Col xs="5" md="5">
                   <div style={{ marginTop: "70px", color: "black" }}>
                     <p>
-                      Ramanand Prasad hails from ramchandar pur village in the
-                      district of gopalganj in bihar. He owns 1 katha acres of
+                      Manoj Singh hails from ramchandar pur village in the
+                      district of gopalganj in Bihar. He owns 3 katha acres of
                       farmland on which he is growing spices, sowing the local
                       variety. He has been practicing farming for 10 years.
-                      Currently he lives with his 10 family member. Encouraged
+                      Currently he lives with his 8 family member. Encouraged
                       by the partnership with Claro Agro, he plans to move up
                       the value chain and further improve his income and improve
                       the lives of his family.
@@ -641,15 +641,15 @@ class App extends Component {
                   fullscreenControl={false}
                   google={this.props.google}
                   initialCenter={{
-                    lat: 26.40703,
-                    lng: 84.42117
+                    lat: 26.40757,
+                    lng: 84.42232
                   }}
                   zoom={12}
                 >
                   <Marker
                     position={{
-                      lat: 26.40703,
-                      lng: 84.42117
+                      lat: 26.40757,
+                      lng: 84.42232
                     }}
                     name={"Current location"}
                   />
@@ -720,7 +720,7 @@ class App extends Component {
                       }}
                     >
                       <span style={{ color: "#51c7ec", fontSize: "x-large" }}>
-                        Write to Ramanand
+                        Write to Manoj
                       </span>
                       <br />
                       <small
@@ -731,7 +731,7 @@ class App extends Component {
                         }}
                       >
                         We will be happy to pass your thank you note or feedback
-                        message to our friend, Santosh.
+                        message to our friend, Manoj.
                       </small>
                       <div style={{ marginTop: "20px" }}>
                         <Form>
