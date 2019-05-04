@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { Map, Marker, GoogleApiWrapper } from "google-maps-react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import CO2 from "./1.png";
-import FLOW from "./2.png";
+import CALENDER from "./calender.png";
+import MINIGRID from "./Minigrid.png";
 import SOLARENERGY from "./3.png";
 import Imgturmeric from "./imgturmeric.png";
 import Imgplant from "./imgplant.png";
@@ -20,7 +21,7 @@ import {
   Col,
   Container
 } from "react-bootstrap";
-import farmerimg from "./Ramanand.jpg";
+import farmerimg from "./vijay.jpg";
 import logo from "./logonew.jpg";
 import farm2 from "./farm2.png";
 import farm1 from "./farm1.png";
@@ -160,12 +161,12 @@ class App extends Component {
                       fontSize: "40px"
                     }}
                   >
-                    Ramanand Prasad
+                    Vijay Mal Prasad
                   </p>
                   <p
                     style={{
                       // fontSize: "18px",
-                      marginTop: "-30px"
+                      marginTop: "-25px"
                     }}
                   >
                     Ramchandar Pur, Gopalganj
@@ -177,7 +178,7 @@ class App extends Component {
                       marginTop: "40px"
                     }}
                   >
-                    Ramanand Prasad was on boarded as a Farmer Partner at Claro
+                    Vijay Mal Prasad was on boarded as a Farmer Partner at Claro
                     Agro in 2018. He has been using our Solar Irrigation Service
                     (Mini Grid) via the Mobile Solar trolley (Patvan). In a
                     span of 1 year, he has generated significant savings by
@@ -265,11 +266,11 @@ class App extends Component {
                 <Col xs="5" md="5">
                   <div style={{ marginTop: "70px", color: "black" }}>
                     <p>
-                      Ramanand Prasad hails from ramchandar pur village in the
-                      district of gopalganj in bihar. He owns 1 katha acres of
+                      Vijay Mal Prasad hails from ramchandar pur village in the
+                      district of gopalganj in Bihar. He owns 4 katha acres of
                       farmland on which he is growing spices, sowing the local
-                      variety. He has been practicing farming for 10 years.
-                      Currently he lives with his 10 family member. Encouraged
+                      variety. He has been practicing farming for 15 years.
+                      Currently he lives with his 5 family member. Encouraged
                       by the partnership with Claro Agro, he plans to move up
                       the value chain and further improve his income and improve
                       the lives of his family.
@@ -295,8 +296,8 @@ class App extends Component {
                             <img
                               className="responsive"
                               alt="CO2"
-                              src={CO2}
-                              style={{ width: "46px", marginLeft: "-11px" }}
+                              src={MINIGRID}
+                              style={{ width: "46px",opacity:'0.5', marginLeft: "-11px" }}
                             />
                           </Col>
                           <Col xs="8" md="8">
@@ -315,7 +316,7 @@ class App extends Component {
                             <img
                               className="responsive"
                               alt="CO2"
-                              src={CO2}
+                              src={SOLARENERGY}
                               style={{ width: "46px", marginLeft: "-11px" }}
                             />
                           </Col>
@@ -335,8 +336,8 @@ class App extends Component {
                             <img
                               className="responsive"
                               alt="CO2"
-                              src={CO2}
-                              style={{ width: "46px", marginLeft: "-11px" }}
+                              src={CALENDER}
+                              style={{ width: "40px", marginLeft: "-11px" }}
                             />
                           </Col>
                           <Col xs="8" md="8">
@@ -641,15 +642,15 @@ class App extends Component {
                   fullscreenControl={false}
                   google={this.props.google}
                   initialCenter={{
-                    lat: 26.40703,
-                    lng: 84.42117
+                    lat: 26.40737,
+                    lng: 84.42204
                   }}
                   zoom={12}
                 >
                   <Marker
                     position={{
-                      lat: 26.40703,
-                      lng: 84.42117
+                      lat: 26.40737,
+                      lng: 84.42204
                     }}
                     name={"Current location"}
                   />
@@ -720,7 +721,7 @@ class App extends Component {
                       }}
                     >
                       <span style={{ color: "#51c7ec", fontSize: "x-large" }}>
-                        Write to Ramanand
+                        Write to Vijay
                       </span>
                       <br />
                       <small
@@ -731,7 +732,7 @@ class App extends Component {
                         }}
                       >
                         We will be happy to pass your thank you note or feedback
-                        message to our friend, Ramanand.
+                        message to our friend, Vijay.
                       </small>
                       <div style={{ marginTop: "20px" }}>
                         <Form>

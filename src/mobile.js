@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Map, Marker, GoogleApiWrapper } from "google-maps-react";
 import CO2 from "./1.png";
 import FLOW from "./2.png";
+import MINIGRID from "./Minigrid.png";
+import CALENDER from "./calender.png";
 import SOLARENERGY from "./3.png";
 import Imgturmeric from "./imgturmeric.png";
 import Imgplant from "./imgplant.png";
@@ -23,7 +25,7 @@ import {
   Col,
   Container
 } from "react-bootstrap";
-import farmerimg from "./Ramanand.jpg";
+import farmerimg from "./vijay.jpg";
 import farm2 from "./farm2.png";
 import farm1 from "./farm1.png";
 import "./mobile.css";
@@ -113,7 +115,7 @@ class App extends Component {
               <div className="title">
                 <h5>Know your farmer</h5>
                 <h2 style={{ color: "#53e253" }}>
-                  Ramanand <b>Prasad</b>
+                Vijay Mal <b>Prasad</b>
                 </h2>
                 <small style={{ color: "lightgray" }}>
                   Ramchandar Pur, Gopalganj
@@ -139,14 +141,14 @@ class App extends Component {
               data-aos-easing="ease-in-out"
             >
               <p>
-                Ramanand Prasad was on boarded as a Farmer Partner at Claro Agro
-                in 2018. He has been using our Solar Irrigation Service
-                (IAAS/Mini Grid) via the Mobile Solar trolley (Patvan). In a
-                span of 1 year, he has generated significant savings by
-                offsetting expensive diesel and in the process has made a real
-                contribution to the environment as well. The additional savings
-                now help him spend more on healthcare for his family and
-                education for his children.
+                Vijay Mal Prasad was on boarded as a Farmer Partner at Claro
+                    Agro in 2018. He has been using our Solar Irrigation Service
+                    (Mini Grid) via the Mobile Solar trolley (Patvan). In a
+                    span of 1 year, he has generated significant savings by
+                    offsetting expensive diesel and in the process has made a
+                    real contribution to the environment as well. The additional
+                    savings now help him spend more on healthcare for his family
+                    and education for his children.
               </p>{" "}
             </div>
           </Jumbotron>
@@ -194,10 +196,10 @@ class App extends Component {
               data-aos-easing="ease-in-out"
             >
               <p>
-                Ramanand Prasad hails from ramchandar pur village in the
-                district of gopalganj in bihar. He owns 1 katha acres of
-                farmland on which he is growing spices, sowing the local
-                variety. He has been practicing farming for 10 years.
+              Vijay Mal Prasad hails from ramchandar pur village in the
+                      district of gopalganj in Bihar. He owns 4 katha acres of
+                      farmland on which he is growing spices, sowing the local
+                      variety. He has been practicing farming for 15 years.
               </p>
             </div>
           </Jumbotron>
@@ -245,10 +247,10 @@ class App extends Component {
               data-aos-easing="ease-in-out"
             >
               <p>
-                Currently he lives with his 10 family member. Encouraged by the
-                partnership with Claro Agro, he plans to move up the value chain
-                and further improve his income and improve the lives of his
-                family.
+              Currently he lives with his 5 family member. Encouraged
+                      by the partnership with Claro Agro, he plans to move up
+                      the value chain and further improve his income and improve
+                      the lives of his family.
               </p>
             </div>
           </Jumbotron>
@@ -289,8 +291,8 @@ class App extends Component {
                         <img
                           className="responsive"
                           alt="CO2"
-                          src={CO2}
-                          style={{ width: "46px", marginLeft: "-11px" }}
+                          src={MINIGRID}
+                          style={{ opacity:'0.5',width: "70px", marginLeft: "-11px" }}
                         />
                       </Col>
                       <Col xs="9" md="9">
@@ -309,8 +311,8 @@ class App extends Component {
                         <img
                           className="responsive"
                           alt="CO2"
-                          src={CO2}
-                          style={{ width: "46px", marginLeft: "-11px" }}
+                          src={SOLARENERGY}
+                          style={{ width: "70px", marginLeft: "-11px" }}
                         />
                       </Col>
                       <Col xs="9" md="9">
@@ -329,7 +331,7 @@ class App extends Component {
                         <img
                           className="responsive"
                           alt="CO2"
-                          src={CO2}
+                          src={CALENDER}
                           style={{ width: "46px", marginLeft: "-11px" }}
                         />
                       </Col>
@@ -338,7 +340,7 @@ class App extends Component {
                           <b>2018</b>
                         </span>
                         <p>
-                          <small>Installed and first used by Ramanand</small>
+                          <small>Installed and first</small>
                         </p>
                       </Col>
                     </Row>
@@ -589,15 +591,15 @@ class App extends Component {
                   fullscreenControl={false}
                   google={this.props.google}
                   initialCenter={{
-                    lat: 26.40703,
-                    lng: 84.42117
+                    lat: 26.40737,
+                    lng: 84.42204
                   }}
                   zoom={12}
                 >
                   <Marker
                     position={{
-                      lat: 26.40703,
-                      lng: 84.42117
+                      lat: 26.40737,
+                    lng: 84.42204
                     }}
                     name={"Current location"}
                   />
@@ -747,7 +749,7 @@ class App extends Component {
                 // }}
                 >
                   <span style={{ color: "#51c7ec", fontSize: "x-large" }}>
-                    Write to Ramanand
+                    Write to Vijay
                   </span>
                   <br />
                   <small
@@ -758,7 +760,7 @@ class App extends Component {
                     }}
                   >
                     We will be happy to pass your thank you note or feedback
-                    message to our friend, Ramanand.
+                    message to our friend, Vijay.
                   </small>
                   <div style={{ marginTop: "20px" }}>
                     <Form>
