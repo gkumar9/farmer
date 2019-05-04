@@ -35,7 +35,7 @@ class Header extends Component {
   render() {
     return (
       <div>
-        <Navbar collapseOnSelect expand="md" bg="light" variant="light">
+        <Navbar id="head" collapseOnSelect expand="md" bg="light" variant="light">
           {/* <Navbar.Brand href="./lp/" style={{ color: "green" }}>
             Claro <b>Agro</b>
           </Navbar.Brand> */}
@@ -83,6 +83,15 @@ class App extends Component {
     //   delay: .6,
     //   transition: 'cubic-bezier(0,0,0,1)'
     // })
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
     if (window.screen.width <= 480) {
       this.props.history.push("./mobile");
     }
@@ -91,7 +100,7 @@ class App extends Component {
     return (
       <div>
         <Header />
-
+        <AnchorLink href="#head"><button  id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button></AnchorLink>
         <Jumbotron style={{ minHeight: "300px" }}>
           <div
             data-aos="fade-right"
