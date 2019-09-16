@@ -1,17 +1,8 @@
 import React, { Component } from "react";
-import { Map, Marker, GoogleApiWrapper } from "google-maps-react";
-import CO2 from "./1.png";
-import FLOW from "./2.png";
-import SOLARENERGY from "./3.png";
-import Imgturmeric from "./imgturmeric.png";
-import Imgplant from "./imgplant.png";
-import land from "./land.png";
-import landsoil from "./landsoil.png";
-import rain from "./rain.png";
-import soil from "./soil.png";
-import temp from "./temp.png";
-import ph from "./ph.png";
-import backgroundimg from "./background.png";
+import CO2 from "./images/1.png";
+import FLOW from "./images/2.png";
+import SOLARENERGY from "./images/3.png";
+import backgroundimg from "./images/background.png";
 import {
   Jumbotron,
   ListGroup,
@@ -23,12 +14,12 @@ import {
   Col,
   Container
 } from "react-bootstrap";
-import farmerimg from "./farmerpic.jpg";
-import farm2 from "./farm2.png";
-import farm1 from "./farm1.png";
+import farmerimg from "./images/farmerpic.jpg";
+import farm2 from "./images/farm2.png";
+import farm1 from "./images/farm1.png";
 import "./mobile.css";
 import AOS from "aos";
-import simpleParallax from 'simple-parallax-js';
+import simpleParallax from "simple-parallax-js";
 
 import "aos/dist/aos.css";
 AOS.init();
@@ -58,24 +49,28 @@ class Header extends Component {
 
 class App extends Component {
   componentDidMount() {
-    var image = document.getElementsByClassName('thumbnail');
+    var image = document.getElementsByClassName("thumbnail");
     new simpleParallax(image, {
-      delay: .6,
-	    transition: 'cubic-bezier(0,0,0,1)'
-    })
+      delay: 0.6,
+      transition: "cubic-bezier(0,0,0,1)"
+    });
     if (window.screen.width >= 480) {
       this.props.history.push("/");
     }
   }
   render() {
-    
     return (
       <div>
         <Container>
           <Header />
           <Jumbotron fluid="true">
             <div className="hero-image">
-              <img fluid="true" className="thumbnail" src={farmerimg} alt="farmer pic" />
+              <img
+                fluid="true"
+                className="thumbnail"
+                src={farmerimg}
+                alt="farmer pic"
+              />
             </div>
             <div
               data-aos="fade-down"
@@ -137,7 +132,8 @@ class App extends Component {
               data-aos-easing="ease-in-out"
             >
               <div>
-                <img className="thumbnail"
+                <img
+                  className="thumbnail"
                   style={{ width: "-webkit-fill-available" }}
                   fluid="true"
                   src={farm1}
@@ -188,7 +184,8 @@ class App extends Component {
               data-aos-easing="ease-in-out"
             >
               <div>
-                <img className="thumbnail"
+                <img
+                  className="thumbnail"
                   style={{ width: "-webkit-fill-available" }}
                   fluid="true"
                   src={farm2}
@@ -309,369 +306,6 @@ class App extends Component {
                         </span>
                         <p>
                           <small>Energy generated</small>
-                        </p>
-                      </Col>
-                    </Row>
-                  </ListGroup.Item>
-                </ListGroup>
-              </div>
-            </div>
-          </Jumbotron>
-
-          <Jumbotron fluid="true">
-            <div className="hero-image">
-              <img className="thumbnail" fluid="true" src={Imgturmeric} alt="farmer pic" />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="600"
-              data-aos-once="true"
-              data-aos-easing="ease-in-out"
-            >
-              <div className="titleturmeric">
-                <h2>Get to know turmeric</h2>
-              </div>
-            </div>
-          </Jumbotron>
-
-          <Jumbotron
-            fluid
-            style={{
-              backgroundColor: "#F7E7E7",
-              padding: "7vw"
-            }}
-          >
-            <div
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="600"
-              data-aos-once="true"
-              data-aos-easing="ease-in-out"
-            >
-              <p>
-                Turmeric is one of the most versatile and widely used spices
-                known to man. It adds flavour and colour to all kinds of
-                curries, and is just as likely to be found in cakes, biscuits,
-                cereals, cheese, yoghurt, sweets and even kulS, or Indian milk
-                ice cream. It's also used as a fabric dye, food additive, health
-                remedy, cosmetic and as an application in religious ceremonies.
-              </p>
-              <p>
-                First discovered more than 2,500 years ago, its health
-                properties as a natural anti-inflammatory, antiseptic and
-                antibacterial agent have long been known in the East. It is
-                thought that turmeric can slow down the effects of Alzheimer's
-                disease and multiple sclerosis, and remove liver toxins
-              </p>
-            </div>
-          </Jumbotron>
-
-          <Jumbotron
-            fluid
-            style={{
-              backgroundColor: "#F7E7E7",
-              padding: "7vw"
-            }}
-          >
-            <div
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="600"
-              data-aos-once="true"
-              data-aos-easing="ease-in-out"
-            >
-              <div>
-                <img className="thumbnail"
-                  style={{
-                    maxHeight: "fit-content",
-                    width: "-webkit-fill-available"
-                  }}
-                  fluid="true"
-                  src={Imgplant}
-                  alt="farmer pic"
-                />
-              </div>
-            </div>
-          </Jumbotron>
-
-          <Jumbotron
-            fluid
-            style={{
-              backgroundColor: "#F7E7E7",
-              padding: "7vw"
-            }}
-          >
-            <div
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="600"
-              data-aos-once="true"
-              data-aos-easing="ease-in-out"
-            >
-              <p>
-                And, of course, it doubles up as a natural remedy for the common
-                cold- Take a teaspoon of turmeric and add it to a quarter of a
-                cup of milk. Mix it in well and simmer over a slow heat,
-                allowing it to cool before drinking. Remaining turmeric can be
-                heated over a flame until it gives off a faint vapour - inhale
-                this if you have a stuffy nose.
-              </p>
-            </div>
-          </Jumbotron>
-
-          <Jumbotron fluid="true">
-            <div className="hero-image">
-              <img className="thumbnail"
-                fluid="true"
-                style={{ width: "-webkit-fill-available" }}
-                src={land}
-                alt="farmer pic"
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="600"
-              data-aos-once="true"
-              data-aos-easing="ease-in-out"
-            >
-              <div className="titleturmeric">
-                <h2>The farmland and soil</h2>
-              </div>
-            </div>
-          </Jumbotron>
-
-          <Jumbotron
-            fluid
-            style={{
-              backgroundColor: "#EDF3E9",
-              padding: "7vw"
-            }}
-          >
-            <div
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="600"
-              data-aos-once="true"
-              data-aos-easing="ease-in-out"
-            >
-              <p>
-                Santosh owns 15 plots of land in the block of Rau Pusa. The area
-                falls under middle Gangetic plain agro climatic zone. The lands
-                of this zone which are alluvial plains are sloppy towards the
-                south east direction with a very low gradient as evidenced by
-                the direction in which the rivers flow.
-              </p>
-              <p>
-                The rivers of Burhi Gandak, Baya, Kosi, Kamla, Kareh, Jhamwari
-                and Balan flow in Samastipur. As all the rivers and rivulets
-                originate in the high Himalayas, dominated by mechanical
-                weathering of rocks, the soils are mostly light to medium light
-                textured except those away from the direct influence of the
-                rivers.
-              </p>
-            </div>
-          </Jumbotron>
-
-          <Jumbotron
-            fluid
-            style={{
-              backgroundColor: "#EDF3E9",
-              padding: "7vw"
-            }}
-          >
-            <div
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="600"
-              data-aos-once="true"
-              data-aos-easing="ease-in-out"
-            >
-              <div>
-                <img className="thumbnail"
-                  style={{
-                    maxHeight: "fit-content",
-                    width: "-webkit-fill-available"
-                  }}
-                  fluid="true"
-                  src={landsoil}
-                  alt="farmer pic"
-                />
-              </div>
-            </div>
-          </Jumbotron>
-
-          <Jumbotron
-            fluid
-            style={{
-              backgroundColor: "#EDF3E9",
-              padding: "7vw",
-              height: "232vw"
-            }}
-          >
-            <div
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="600"
-              data-aos-once="true"
-              data-aos-easing="ease-in-out"
-            >
-              <p>
-                The upland soils are well drained to moderately well drained.
-                The medium low lands and the low lands soils, although of good
-                to moderate permeability, have become some what poorly drained
-                due to high water table in the areas. The soils are moderately
-                rich to poor in nitrogen (especially in Gopalganj and Siwan
-                districts), moderate to very low in available phosphorus and
-                medium to high in available potash. The soils are showing
-                symptoms of deficiency of zinc and iron mostly induced by high
-                available calcium.
-              </p>
-              <div style={{ marginTop: "10vw" }}>
-                <Map
-                scrollwheel={
-                        false
-                      }
-                  containerStyle={containerStyle}
-                  mapTypeControl={false}
-                  gestureHandling={"greedy"}
-                  zoomControl={true}
-                  streetViewControl={false}
-                  fullscreenControl={false}
-                  google={this.props.google}
-                  initialCenter={{
-                    lat: 25.9845,
-                    lng: 85.6807
-                  }}
-                  zoom={10}
-                >
-                  <Marker
-                    position={{
-                      lat: 25.9845,
-                      lng: 85.6807
-                    }}
-                    name={"Current location"}
-                  />
-                </Map>
-              </div>
-            </div>
-          </Jumbotron>
-
-          <Jumbotron
-            fluid
-            style={{
-              padding: "7vw"
-            }}
-          >
-            <div
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="600"
-              data-aos-once="true"
-              data-aos-easing="ease-in-out"
-            >
-              <div
-                style={{
-                  alignItems: "center",
-                  display: "flex",
-                  flexDirection: "column"
-                }}
-              >
-                <h3
-                  style={{
-                    marginBottom: "20px",
-                    color: "gray"
-                  }}
-                >
-                  Farmland Stats
-                </h3>
-                <ListGroup variant="flush">
-                  <ListGroup.Item>
-                    <Row>
-                      <Col xs="4">
-                        <img 
-                          className="responsive"
-                          alt="rain"
-                          src={rain}
-                          style={{ width: "46px", marginLeft: "-11px" }}
-                        />
-                      </Col>
-                      <Col xs="8">
-                        <span>
-                          <b>1040-1450</b>
-                        </span>
-                        <p>
-                          <small>Total rainfall (mm)</small>
-                        </p>
-                      </Col>
-                    </Row>
-                  </ListGroup.Item>
-                  <ListGroup.Item>
-                    <Row>
-                      <Col xs="4">
-                        <img 
-                          className="responsive"
-                          alt="soil"
-                          src={soil}
-                          style={{ width: "46px", marginLeft: "-11px" }}
-                        />
-                      </Col>
-                      <Col xs="8">
-                        <span>
-                          <b>Sandy loam</b>
-                        </span>
-                        <p>
-                          <small>Soil type</small>
-                        </p>
-                      </Col>
-                    </Row>
-                  </ListGroup.Item>
-                  <ListGroup.Item>
-                    <Row>
-                      <Col xs="4">
-                        <img 
-                          className="responsive"
-                          alt="temp"
-                          src={temp}
-                          style={{ width: "46px", marginLeft: "-11px" }}
-                        />
-                      </Col>
-                      <Col xs="8">
-                        <span>
-                          <b>36.6 (max)-7.7 (min)</b>
-                        </span>
-                        <p>
-                          <small>Energy generated</small>
-                        </p>
-                      </Col>
-                    </Row>
-                  </ListGroup.Item>
-                  <ListGroup.Item>
-                    <Row>
-                      <Col xs="4">
-                        <img 
-                          className="responsive"
-                          alt="ph"
-                          src={ph}
-                          style={{ width: "46px", marginLeft: "-11px" }}
-                        />
-                      </Col>
-                      <Col xs="8">
-                        <span>
-                          <b>6.5-8.4</b>
-                        </span>
-                        <p>
-                          <small>Soil acidity (pH)</small>
                         </p>
                       </Col>
                     </Row>
@@ -836,6 +470,4 @@ class App extends Component {
     );
   }
 }
-export default GoogleApiWrapper({
-  apiKey: "AIzaSyCHi5ryWgN1FcZI-Hmqw3AdxJQmpopYJGk"
-})(App);
+export default App;
