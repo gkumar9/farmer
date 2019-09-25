@@ -1,19 +1,8 @@
 import React, { Component } from "react";
-import { Map, Marker, GoogleApiWrapper } from "google-maps-react";
-import CO2 from "./1.png";
-import FLOW from "./2.png";
-import SOLARENERGY from "./3.png";
-import MINIGRID from "./Minigrid.png";
-import CALENDER from "./calender.png";
-import Imgturmeric from "./imgturmeric.png";
-import Imgplant from "./imgplant.png";
-import land from "./land.png";
-import landsoil from "./landsoil.png";
-import rain from "./rain.png";
-import soil from "./soil.png";
-import temp from "./temp.png";
-import ph from "./ph.png";
-import backgroundimg from "./background.png";
+import SOLARENERGY from "./images/3.png";
+import MINIGRID from "./images/Minigrid.png";
+import CALENDER from "./images/calender.png";
+import backgroundimg from "./images/background.png";
 import {
   Jumbotron,
   ListGroup,
@@ -25,23 +14,27 @@ import {
   Col,
   Container
 } from "react-bootstrap";
-import farmerimg from "./Ramanand.jpg";
-import farm2 from "./farm2.png";
-import farm1 from "./farm1.png";
+import farmerimg from "./images/Ramanand.jpg";
+import farm2 from "./images/farm2.png";
+import farm1 from "./images/farm1.png";
 import "./mobile.css";
 import AOS from "aos";
-import simpleParallax from "simple-parallax-js";
-import logo from "./logonew.jpg";
+import logo from "./images/logonew.jpg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-
 import "aos/dist/aos.css";
 AOS.init();
-const containerStyle = { position: "absolute", width: "84%", height: "46%" };
+// const containerStyle = { position: "absolute", width: "84%", height: "46%" };
 class Header extends Component {
   render() {
     return (
       <div>
-        <Navbar id="head" collapseOnSelect expand="md" bg="light" variant="light">
+        <Navbar
+          id="head"
+          collapseOnSelect
+          expand="md"
+          bg="light"
+          variant="light"
+        >
           <Navbar.Brand href="https://www.claroagro.com/lp/" target="_blank">
             <img
               src={logo}
@@ -61,14 +54,6 @@ class Header extends Component {
               </Nav.Link>
               <Nav.Link>
                 {" "}
-                <AnchorLink href="#turmeric">Turmeric</AnchorLink>
-              </Nav.Link>
-              <Nav.Link>
-                {" "}
-                <AnchorLink href="#gopalgunj">Gopalgunj</AnchorLink>
-              </Nav.Link>
-              <Nav.Link>
-                {" "}
                 <AnchorLink href="#contactus">Contact us</AnchorLink>
               </Nav.Link>
             </Nav>
@@ -81,10 +66,15 @@ class Header extends Component {
 
 class App extends Component {
   componentDidMount() {
-    window.onscroll = function() {scrollFunction()};
+    window.onscroll = function() {
+      scrollFunction();
+    };
 
     function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
         document.getElementById("myBtn").style.display = "block";
       } else {
         document.getElementById("myBtn").style.display = "none";
@@ -103,7 +93,11 @@ class App extends Component {
     return (
       <div>
         <Container>
-        <AnchorLink href="#head"><button  id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button></AnchorLink>
+          <AnchorLink href="#head">
+            <button id="myBtn" title="Go to top">
+              <i class="fas fa-arrow-up"></i>
+            </button>
+          </AnchorLink>
           <Header />
           <Jumbotron fluid="true">
             <div className="hero-image">
@@ -295,14 +289,18 @@ class App extends Component {
                   Our Intervention
                 </h3>
                 <ListGroup variant="flush">
-                <ListGroup.Item>
+                  <ListGroup.Item>
                     <Row>
                       <Col xs="3" md="3">
                         <img
                           className="responsive"
                           alt="CO2"
                           src={MINIGRID}
-                          style={{ opacity:'0.5',width: "70px", marginLeft: "-11px" }}
+                          style={{
+                            opacity: "0.5",
+                            width: "70px",
+                            marginLeft: "-11px"
+                          }}
                         />
                       </Col>
                       <Col xs="9" md="9">
@@ -355,383 +353,10 @@ class App extends Component {
                       </Col>
                     </Row>
                   </ListGroup.Item>
-                 </ListGroup>
-              </div>
-            </div>
-          </Jumbotron>
-
-          <Jumbotron id="turmeric" fluid="true">
-            <div className="hero-image">
-              <img
-                className="thumbnail"
-                fluid="true"
-                src={Imgturmeric}
-                alt="farmer pic"
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="600"
-              data-aos-once="true"
-              data-aos-easing="ease-in-out"
-            >
-              <div className="titleturmeric">
-                <h2>Get to know turmeric</h2>
-              </div>
-            </div>
-          </Jumbotron>
-
-          <Jumbotron
-            fluid
-            style={{
-              backgroundColor: "#F7E7E7",
-              padding: "7vw"
-            }}
-          >
-            <div
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="600"
-              data-aos-once="true"
-              data-aos-easing="ease-in-out"
-            >
-              <p>
-                Turmeric is one of the most versatile and widely used spices
-                known to man. It adds flavour and colour to all kinds of
-                curries, and is just as likely to be found in cakes, biscuits,
-                cereals, cheese, yoghurt, sweets and even kulS, or Indian milk
-                ice cream. It's also used as a fabric dye, food additive, health
-                remedy, cosmetic and as an application in religious ceremonies.
-              </p>
-              <p>
-                First discovered more than 2,500 years ago, its health
-                properties as a natural anti-inflammatory, antiseptic and
-                antibacterial agent have long been known in the East. It is
-                thought that turmeric can slow down the effects of Alzheimer's
-                disease and multiple sclerosis, and remove liver toxins
-              </p>
-            </div>
-          </Jumbotron>
-
-          <Jumbotron
-            fluid
-            style={{
-              backgroundColor: "#F7E7E7",
-              padding: "7vw"
-            }}
-          >
-            <div
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="600"
-              data-aos-once="true"
-              data-aos-easing="ease-in-out"
-            >
-              <div>
-                <img
-                  className="thumbnail"
-                  style={{
-                    maxHeight: "fit-content",
-                    width: "-webkit-fill-available"
-                  }}
-                  fluid="true"
-                  src={Imgplant}
-                  alt="farmer pic"
-                />
-              </div>
-            </div>
-          </Jumbotron>
-
-          <Jumbotron
-            fluid
-            style={{
-              backgroundColor: "#F7E7E7",
-              padding: "7vw"
-            }}
-          >
-            <div
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="600"
-              data-aos-once="true"
-              data-aos-easing="ease-in-out"
-            >
-              <p>
-                And, of course, it doubles up as a natural remedy for the common
-                cold- Take a teaspoon of turmeric and add it to a quarter of a
-                cup of milk. Mix it in well and simmer over a slow heat,
-                allowing it to cool before drinking. Remaining turmeric can be
-                heated over a flame until it gives off a faint vapour - inhale
-                this if you have a stuffy nose.
-              </p>
-            </div>
-          </Jumbotron>
-
-          <Jumbotron id="gopalgunj" fluid="true">
-            <div className="hero-image">
-              <img
-                className="thumbnail"
-                fluid="true"
-                style={{ width: "-webkit-fill-available" }}
-                src={land}
-                alt="farmer pic"
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="600"
-              data-aos-once="true"
-              data-aos-easing="ease-in-out"
-            >
-              <div className="titleturmeric">
-                <h2>Farmland & The geography</h2>
-              </div>
-            </div>
-          </Jumbotron>
-
-          <Jumbotron
-            fluid
-            style={{
-              backgroundColor: "#EDF3E9",
-              padding: "7vw"
-            }}
-          >
-            <div
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="600"
-              data-aos-once="true"
-              data-aos-easing="ease-in-out"
-            >
-              <p>
-                Gopalganj is one of the administrative districts in the Indian
-                state of Bihar. The district headquarters is the town of
-                Gopalganj, and the district is part of Saran Division. Major
-                languages spoken are Bhojpuri, and Hindi.
-              </p>
-            </div>
-          </Jumbotron>
-
-          <Jumbotron
-            fluid
-            style={{
-              backgroundColor: "#EDF3E9",
-              padding: "7vw"
-            }}
-          >
-            <div
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="600"
-              data-aos-once="true"
-              data-aos-easing="ease-in-out"
-            >
-              <div>
-                <img
-                  className="thumbnail"
-                  style={{
-                    maxHeight: "fit-content",
-                    width: "-webkit-fill-available"
-                  }}
-                  fluid="true"
-                  src={landsoil}
-                  alt="farmer pic"
-                />
-              </div>
-            </div>
-          </Jumbotron>
-
-          <Jumbotron
-            fluid
-            style={{
-              backgroundColor: "#EDF3E9",
-              padding: "7vw",
-              height: "232vw"
-            }}
-          >
-            <div
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="600"
-              data-aos-once="true"
-              data-aos-easing="ease-in-out"
-            >
-              <p>Facts about Gopalganj:</p>
-              <p>
-                <b>DEMOGRAPHIC</b>
-                <ul>
-                  <li>Population: 2,558,037 (2.62% of the state)</li>
-                  <li>Women: 1,288,360 (50.12%)</li>
-                  <li>Rural population: 2,018,807 (93.93%)</li>
-                </ul>
-              </p>
-              <p>
-                <b>SOIL PROFILE:</b>
-                <ul>
-                  <li>Total rainfall (mm): 1040-1450</li>
-                  <li>Soil type: Sandy loam</li>
-                  <li>Soil acidity (pH) :6.5-8.4</li>
-                </ul>
-              </p>
-              <p>
-                <b>WEATHER/ENVIRONMENT:</b>
-                <ul>
-                  <li>Annual rainfall(mm): 1040-1450</li>
-                  <li>Temperature: 36.6 (max)-7.7 (min)</li>
-                </ul>
-              </p>
-              <div style={{ marginTop: "10vw" }}>
-                <Map
-                  scrollwheel={false}
-                  containerStyle={containerStyle}
-                  mapTypeControl={false}
-                  gestureHandling={"greedy"}
-                  zoomControl={true}
-                  streetViewControl={false}
-                  fullscreenControl={false}
-                  google={this.props.google}
-                  initialCenter={{
-                    lat: 26.40703,
-                    lng: 84.42117
-                  }}
-                  zoom={12}
-                >
-                  <Marker
-                    position={{
-                      lat: 26.40703,
-                      lng: 84.42117
-                    }}
-                    name={"Current location"}
-                  />
-                </Map>
-              </div>
-            </div>
-          </Jumbotron>
-
-          {/* <Jumbotron
-            fluid
-            style={{
-              padding: "7vw"
-            }}
-          >
-            <div
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="600"
-              data-aos-once="true"
-              data-aos-easing="ease-in-out"
-            >
-              <div
-                style={{
-                  alignItems: "center",
-                  display: "flex",
-                  flexDirection: "column"
-                }}
-              >
-                <h3
-                  style={{
-                    marginBottom: "20px",
-                    color: "gray"
-                  }}
-                >
-                  Farmland Stats
-                </h3>
-                <ListGroup variant="flush">
-                  <ListGroup.Item>
-                    <Row>
-                      <Col xs="4">
-                        <img
-                          className="responsive"
-                          alt="rain"
-                          src={rain}
-                          style={{ width: "46px", marginLeft: "-11px" }}
-                        />
-                      </Col>
-                      <Col xs="8">
-                        <span>
-                          <b>1040-1450</b>
-                        </span>
-                        <p>
-                          <small>Total rainfall (mm)</small>
-                        </p>
-                      </Col>
-                    </Row>
-                  </ListGroup.Item>
-                  <ListGroup.Item>
-                    <Row>
-                      <Col xs="4">
-                        <img
-                          className="responsive"
-                          alt="soil"
-                          src={soil}
-                          style={{ width: "46px", marginLeft: "-11px" }}
-                        />
-                      </Col>
-                      <Col xs="8">
-                        <span>
-                          <b>Sandy loam</b>
-                        </span>
-                        <p>
-                          <small>Soil type</small>
-                        </p>
-                      </Col>
-                    </Row>
-                  </ListGroup.Item>
-                  <ListGroup.Item>
-                    <Row>
-                      <Col xs="4">
-                        <img
-                          className="responsive"
-                          alt="temp"
-                          src={temp}
-                          style={{ width: "46px", marginLeft: "-11px" }}
-                        />
-                      </Col>
-                      <Col xs="8">
-                        <span>
-                          <b>36.6 (max)-7.7 (min)</b>
-                        </span>
-                        <p>
-                          <small>Energy generated</small>
-                        </p>
-                      </Col>
-                    </Row>
-                  </ListGroup.Item>
-                  <ListGroup.Item>
-                    <Row>
-                      <Col xs="4">
-                        <img
-                          className="responsive"
-                          alt="ph"
-                          src={ph}
-                          style={{ width: "46px", marginLeft: "-11px" }}
-                        />
-                      </Col>
-                      <Col xs="8">
-                        <span>
-                          <b>6.5-8.4</b>
-                        </span>
-                        <p>
-                          <small>Soil acidity (pH)</small>
-                        </p>
-                      </Col>
-                    </Row>
-                  </ListGroup.Item>
                 </ListGroup>
               </div>
             </div>
-          </Jumbotron> */}
+          </Jumbotron>
 
           <Jumbotron id="contactus" fluid="true">
             <div
@@ -888,6 +513,4 @@ class App extends Component {
     );
   }
 }
-export default GoogleApiWrapper({
-  apiKey: "AIzaSyCHi5ryWgN1FcZI-Hmqw3AdxJQmpopYJGk"
-})(App);
+export default App;

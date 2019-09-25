@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "aos": "^3.0.0-beta.6",
+    "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
     "google-maps-react": "^2.0.2",
     "history": "^4.9.0",
@@ -13,8 +14,7 @@
     "react-bootstrap": "^1.0.0-beta.6",
     "react-dom": "^16.8.5",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "2.1.8",
-    "simple-parallax-js": "^4.2.1"
+    "react-scripts": "2.1.8"
   },
   "scripts": {
     "start": "react-scripts start",
